@@ -257,3 +257,4 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presenta.BC777D
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\MailKit.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\MimeKit.dll
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.sourcelink.json

@@ -25,7 +25,7 @@ namespace Business.ViewModels.Account
         public string Password { get; set; }
 
         [Required(ErrorMessage = "It is a required field!")]
-        [Compare(nameof(Password), ErrorMessage = "Password doesn't match with comfirm pasword!")]
+        [Compare(nameof(Password), ErrorMessage = "Passwords doesn't match!")]
         public string ConfirmPassword { get; set; }
     }
 }

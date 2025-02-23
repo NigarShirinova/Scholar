@@ -17,5 +17,6 @@ namespace Business.ViewModels.Account
         [Required(ErrorMessage = "It is a required field!")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        public string? FullName { get; set; }
     }
 }

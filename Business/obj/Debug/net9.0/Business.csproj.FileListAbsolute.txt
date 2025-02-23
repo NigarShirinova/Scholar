@@ -17,3 +17,4 @@ C:\Users\ASUS\source\repos\Scholar\Business\obj\Debug\net9.0\refint\Business.dll
 C:\Users\ASUS\source\repos\Scholar\Business\obj\Debug\net9.0\Business.pdb
 C:\Users\ASUS\source\repos\Scholar\Business\obj\Debug\net9.0\Business.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\Scholar\Business\obj\Debug\net9.0\ref\Business.dll
+C:\Users\ASUS\source\repos\Scholar\Business\obj\Debug\net9.0\Business.sourcelink.json

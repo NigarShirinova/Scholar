@@ -1,6 +1,7 @@
 ﻿
 using Business.Abstract;
 using Business.ViewModels.Account;
+using Business.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -27,6 +28,7 @@ namespace Presentation.Controllers
         {
             if (!ModelState.IsValid)
             {
+               
                 return View(model);
             }
 
@@ -36,6 +38,7 @@ namespace Presentation.Controllers
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
+                    return Content("<script>alert('You registrated with this email before, please try to login!'); window.location.href='/Account/Register';</script>", "text/html");
                 }
                 return View(model);
             }
@@ -88,8 +91,13 @@ namespace Presentation.Controllers
                 ModelState.AddModelError(string.Empty, "Email or password is wrong!");
                 return Content("<script>alert('Email or password is wrong!'); window.location.href='/Account/Login';</script>", "text/html");
             }
+            HomeIndexVM homeIndexVM = new HomeIndexVM()
+            {
+                UserName = model.FullName,
 
-            return RedirectToAction("Index", "Home");
+            };
+
+            return RedirectToAction("Index", "Home", homeIndexVM);
         }
 
         [HttpPost]
@@ -99,5 +107,65 @@ namespace Presentation.Controllers
             await _accountService.LogoutAsync();
             return RedirectToAction("Login");
         }
+
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordVM model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var user = await _accountService.FindUserByEmailAsync(model.Email);
+            if (user == null)
+            {
+                return Content("<script>alert('If the email exists, a reset link has been sent!'); window.location.href='/Account/Login';</script>", "text/html");
+            }
+
+            var token = await _accountService.GeneratePasswordResetTokenAsync(user);
+            var url = Url.Action(nameof(ResetPassword), "Account", new { token, email = user.Email }, Request.Scheme);
+            _accountService.SendPasswordResetEmail(user.Email, url);
+
+            return Content("<script>alert('Password reset link has been sent!'); window.location.href='/Account/Login';</script>", "text/html");
+        }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string token, string email)
+        {
+            if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(email))
+            {
+                return NotFound("Invalid password reset request.");
+            }
+
+            var model = new ResetPasswordVM { Token = token, Email = email };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ResetPassword(ResetPasswordVM model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var user = await _accountService.FindUserByEmailAsync(model.Email);
+            if (user == null)
+            {
+                return Content("<script>alert('User not found!'); window.location.href='/Account/Login';</script>", "text/html");
+            }
+
+            var result = await _accountService.ResetPasswordAsync(user, model.Token, model.NewPassword);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Error resetting password.");
+                return View(model);
+            }
+
+            return Content("<script>alert('Password has been reset successfully!'); window.location.href='/Account/Login';</script>", "text/html");
+        }
+
     }
 }

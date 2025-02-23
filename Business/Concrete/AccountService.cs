@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Business.Abstract;
 using Business.ViewModels.Account;
 using Business.ViewModels.Email;
+using Business.ViewModels.Home;
 using Common.Entities;
 using Microsoft.AspNetCore.Identity;
 
@@ -123,6 +124,7 @@ namespace Business.Concrete
         {
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null || !await _userManager.IsEmailConfirmedAsync(user)) return SignInResult.Failed;
+            model.FullName = user.FullName;
             return await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
         }
 
@@ -130,5 +132,62 @@ namespace Business.Concrete
         {
             await _signInManager.SignOutAsync();
         }
+
+        public async Task<string> GeneratePasswordResetTokenAsync(User user)
+        {
+            return await _userManager.GeneratePasswordResetTokenAsync(user);
+        }
+
+        public void SendPasswordResetEmail(string email, string url)
+        {
+            string body = $@"
+    <html>
+    <head>
+        <style>
+            body {{
+                font-family: Arial, sans-serif;
+                color : white;
+                background-color: #f4f4f4;
+                padding: 20px;
+                text-align: center;
+            }}
+            .container {{
+                background-color: #7a6ad8;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                display: inline-block;
+            }}
+            .button {{
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #ffffff;
+                background-color: rgba(255,255,255,0.13);
+                text-decoration: none;
+                border-radius: 5px;
+            }}
+            .button:hover {{
+                background-color: rgba(255,255,255,0.50);
+            }}
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <h2>Reset Your Password</h2>
+            <p>Click the button below to reset your password:</p>
+            <a href='{url}' class='button'>Reset Password</a>
+        </div>
+    </body>
+    </html>";
+
+            _emailService.SendMessage(new Message(new List<string> { email }, "Password Reset", body));
+        }
+
+        public async Task<IdentityResult> ResetPasswordAsync(User user, string token, string newPassword)
+        {
+            return await _userManager.ResetPasswordAsync(user, token, newPassword);
+        }
+
     }
 }

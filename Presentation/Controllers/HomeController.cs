@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Business.ViewModels.Home;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
@@ -6,9 +7,9 @@ namespace Presentation.Controllers
     public class HomeController : Controller
     {
        
-        public IActionResult Index()
+        public IActionResult Index(HomeIndexVM model)
         {
-            return View();
+            return View(model);
         }
 
     }

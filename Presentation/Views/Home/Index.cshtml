@@ -1,461 +1,484 @@
-﻿<!DOCTYPE html>
+﻿@using Business.ViewModels.Home
+@model HomeIndexVM
+
+
+<!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Scholar</title>
+	<title>Scholar</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/fontawesome.css">
-    <link rel="stylesheet" href="~/css/main.css">
-    <link rel="stylesheet" href="~/css/owl.css">
-    <link rel="stylesheet" href="~/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="~/css/fontawesome.css">
+	<link rel="stylesheet" href="~/css/main.css">
+	<link rel="stylesheet" href="~/css/owl.css">
+	<link rel="stylesheet" href="~/css/animate.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-  </head>
+</head>
 
 <body>
 
-  <!-- Loader Start -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- Loader End -->
+	<!-- Loader Start -->
+	<div id="js-preloader" class="js-preloader">
+		<div class="preloader-inner">
+			<span class="dot"></span>
+			<div class="dots">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- Loader End -->
+	<!-- Header Start  -->
+	<header class="header-area header-sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="main-nav">
+						<a class="logo">
+							<h1>Scholar</h1>
+						</a>
+						<div class="search-input">
+							@if (Model.UserName != null)
+							{
+								<form id="search" action="#">
+									<input type="text" placeholder="Welcome, @Model.UserName!" id='searchText' name="searchKeyword" onkeypress="handle" readonly />
 
-  <!-- Header Start  -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                        <a asp-action="index" asp-controller="home" class="logo">
-                        <h1>Scholar</h1>
-                    </a>
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- Menu Start -->
-                    <ul class="nav">
-                            <li><a asp-action="index" asp-controller="home" class="active">Home</a></li>
-                            <li><a asp-action="login" asp-controller="account">Login</a></li>
-                            <li><a asp-action="register" asp-controller="account">Register</a></li>
-                  </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- Menu End -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-  <!-- Header End -->
+								</form>
+							}
+						</div>
+						<!-- Menu Start -->
+						<ul class="nav">
+							<li><a asp-action="index" asp-controller="home" class="active">Home</a></li>
+							@if (Model.UserName == null)
+							{
+								<li><a asp-action="login" asp-controller="account">Login</a></li>
+								<li><a asp-action="register" asp-controller="account">Register</a></li>
+							}
+							@if (Model.UserName != null)
+							{
+								<li><a>Dashboard</a></li>
+								<li>
+									<form asp-action="Logout" asp-controller="Account" method="post" style="display:inline;">
+										<button type="submit" class="btn btn-link">
+											<i class="fa-solid fa-right-from-bracket" style="color: floralwhite;"></i>
+										</button>
+									</form>
+								</li>
+							}
+						</ul>
+						<a class='menu-trigger'>
+							<span>Menu</span>
+						</a>
+						<!-- Menu End -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+	<!-- Banner Start -->
 
-  <!-- Banner Start -->
+	<div class="main-banner" id="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="owl-carousel owl-banner">
+						<div class="item item-1">
+							<div class="header-text">
+								<span class="category">Our Courses</span>
+								<h2>With Scholar Teachers, Everything Is Easier</h2>
+								<p>With the support of our expert teachers, achieving success in various fields becomes much easier. Their guidance, knowledge, and personalized approach help you develop skills, gain confidence, and reach your goals efficiently. </p>
+								<div class="buttons">
+									<div class="main-button">
+										@if (Model.UserName == null)
+										{
+											<a asp-action="register" asp-controller="account">Register Now!</a>
+										}
+									</div>
 
-  <div class="main-banner" id="top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-carousel owl-banner">
-            <div class="item item-1">
-              <div class="header-text">
-                <span class="category">Our Courses</span>
-                <h2>With Scholar Teachers, Everything Is Easier</h2>
-                <p>With the support of our expert teachers, achieving success in various fields becomes much easier. Their guidance, knowledge, and personalized approach help you develop skills, gain confidence, and reach your goals efficiently. </p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a asp-action="register" asp-controller="account">Register Now!</a>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <div class="item item-2">
-              <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Get the best result out of your effort</h2>
-                <p>Your hard work deserves the best outcomes, and we’re here to make that happen. With the right guidance, effective strategies, and a supportive learning environment, you can maximize your potential and achieve outstanding results. Let us help you turn your effort into real success.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a asp-action="register" asp-controller="account">Register Now!</a>
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-            <div class="item item-3">
-              <div class="header-text">
-                <span class="category">Online Learning</span>
-                <h2>Online Learning helps you save the time</h2>
-                <p>Online learning offers a flexible and efficient way to gain knowledge without the limitations of time and location. With easy access to lessons, resources, and expert guidance, you can learn at your own pace while saving valuable time. Stay productive and achieve your goals without compromising your schedule.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a asp-action="register" asp-controller="account">Register Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+								</div>
+							</div>
+						</div>
+						<div class="item item-2">
+							<div class="header-text">
+								<span class="category">Best Result</span>
+								<h2>Get the best result out of your effort</h2>
+								<p>Your hard work deserves the best outcomes, and we’re here to make that happen. With the right guidance, effective strategies, and a supportive learning environment, you can maximize your potential and achieve outstanding results. Let us help you turn your effort into real success.</p>
+								<div class="buttons">
+									<div class="main-button">
+										@if (Model.UserName == null)
+										{
+											<a asp-action="register" asp-controller="account">Register Now!</a>
+										}
+									</div>
 
-  <!-- Banner End -->
+								</div>
+							</div>
+						</div>
+						<div class="item item-3">
+							<div class="header-text">
+								<span class="category">Online Learning</span>
+								<h2>Online Learning helps you save the time</h2>
+								<p>Online learning offers a flexible and efficient way to gain knowledge without the limitations of time and location. With easy access to lessons, resources, and expert guidance, you can learn at your own pace while saving valuable time. Stay productive and achieve your goals without compromising your schedule.</p>
+								<div class="buttons">
+									<div class="main-button">
+										@if (Model.UserName == null)
+										{
+											<a asp-action="register" asp-controller="account">Register Now!</a>
+										}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <!-- Services Start -->
+	<!-- Banner End -->
+	<!-- Services Start -->
 
-  <div class="services section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="~/images/service-01.png" alt="Personal Tutoring">
-            </div>
-            <div class="main-content">
-              <h4>Personal Tutoring</h4>
-              <p>Get one-on-one guidance from expert teachers tailored to your learning needs, helping you master any subject with confidence.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="~/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>Interactive Courses</h4>
-              <p>Access well-structured online courses designed to enhance your skills with engaging lessons, practical exercises, and real-time feedback.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="~/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Career Coaching</h4>
-              <p>Receive professional advice on academic and career paths, ensuring you make informed decisions that align with your goals and aspirations.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- 
-  Services End -->
+	<div class="services section" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="service-item">
+						<div class="icon">
+							<img src="~/images/service-01.png" alt="Personal Tutoring">
+						</div>
+						<div class="main-content">
+							<h4>Personal Tutoring</h4>
+							<p>Get one-on-one guidance from expert teachers tailored to your learning needs, helping you master any subject with confidence.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="service-item">
+						<div class="icon">
+							<img src="~/images/service-02.png" alt="short courses">
+						</div>
+						<div class="main-content">
+							<h4>Interactive Courses</h4>
+							<p>Access well-structured online courses designed to enhance your skills with engaging lessons, practical exercises, and real-time feedback.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="service-item">
+						<div class="icon">
+							<img src="~/images/service-03.png" alt="web experts">
+						</div>
+						<div class="main-content">
+							<h4>Career Coaching</h4>
+							<p>Receive professional advice on academic and career paths, ensuring you make informed decisions that align with your goals and aspirations.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
+	Services End -->
+	<!-- About us Start -->
+	<div class="section about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-1">
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Where shall we begin?
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Start your journey with our structured learning paths and expert mentorship structures.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									How do we work together?
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Learn at your own pace with interactive lessons and live support.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Why SCHOLAR is the best?
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									We offer high-quality education, expert teachers, and a seamless learning experience.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Do we get the best support?
+								</button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Absolutely! Our dedicated team is here to assist you every step of the way of your learning experience.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 align-self-center">
+					<div class="section-heading">
+						<h6>About Us</h6>
+						<h2>What Makes Us the Best Online Academy?</h2>
+						<h7><i>"Learning made simple, success made possible!" </i></h7>
+						<p style="display: none;">.</p>
+						<p> Join a platform where expert guidance, interactive courses, and personalized support come together to help you achieve more in less time.</p>
+						<div class="main-button">
+							@if (Model.UserName == null)
+							{
+								<a asp-action="register" asp-controller="account">Join To Us!</a>
+							}
 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <!-- About us Start -->
-  <div class="section about-us">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-1">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Where shall we begin?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Start your journey with our structured learning paths and expert mentorship structures.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How do we work together?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Learn at your own pace with interactive lessons and live support.
-                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Why SCHOLAR is the best?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  We offer high-quality education, expert teachers, and a seamless learning experience.
-                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Do we get the best support?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Absolutely! Our dedicated team is here to assist you every step of the way of your learning experience.
-               </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>About Us</h6>
-            <h2>What Makes Us the Best Online Academy?</h2>
-            <h7><i>"Learning made simple, success made possible!" </i></h7>     
-            <p style="display: none;">.</p>
-             <p> Join a platform where expert guidance, interactive courses, and personalized support come together to help you achieve more in less time.</p>
-            <div class="main-button">
-              <a asp-action="register" asp-controller="account">Join To Us!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- About us End -->
+	<!-- Latest Courses Start -->
 
-  <!-- About us End -->
+	<section class="section courses" id="courses">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div class="section-heading">
+						<h6>Latest Courses</h6>
+						<h2>Latest Courses</h2>
+					</div>
+				</div>
+			</div>
+			<ul class="event_filter">
+				<li>
+					<a class="is_active" href="#" data-filter="*">Show All</a>
+				</li>
+				<li>
+					<a href="#" data-filter=".backend">Backend</a>
+				</li>
+				<li>
+					<a href="#" data-filter=".math">Mathematics</a>
+				</li>
+			</ul>
+			<div class="row event_box">
+				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+					<div class="events_item">
+						<div class="thumb">
+							<a href="#"><img src="~/images/course-01.png" alt=""></a>
+							<span class="category">Backend</span>
+							<span class="price"><h6><em>$</em>100</h6></span>
+						</div>
+						<div class="down-content">
+							<span class="author">Nigar Shirinova</span>
+							<h4>Learn Backend Development!</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-
-  <!-- Latest Courses Start -->
-
-  <section class="section courses" id="courses" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Latest Courses</h6>
-            <h2>Latest Courses</h2>
-          </div>
-        </div>
-      </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#" data-filter=".backend">Backend</a>
-        </li>
-        <li>
-          <a href="#" data-filter=".math">Mathematics</a>
-        </li>
-      </ul>
-      <div class="row event_box">
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="~/images/course-01.png" alt=""></a>
-              <span class="category">Backend</span>
-              <span class="price"><h6><em>$</em>100</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Nigar Shirinova</span>
-              <h4>Learn Backend Development!</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Latest Courses End -->
-
-
-  <!-- Count Start-->
-  <div class="section fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
-                  <p class="count-text ">Course Hours</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
-                  <p class="count-text ">Employed Students</p>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
-                  <p class="count-text ">Years Experience</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Count End -->
-
-
-  <!-- Team Start -->
-  <div class="team section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="~/images/member-01.jpg" alt="">
-              <span class="category">Backend Teacher</span>
-              <h4>Nigar Shirinova</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-
-         
-        </div>
-      </div>
-    </div>
-  </div> 
-
-  <!-- Team End -->
-
-  <!-- testimonials start -->
-
-  <div class="section testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="owl-carousel owl-testimonials">
-            <div class="item">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
-              <div class="author">
-                <img src="~/images/member-01.jpg" alt="">
-                <span class="category">Backend Developer</span>
-                <h4>Nigar Shirinova</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
-              <div class="author">
-                <img src="~/images/member-01.jpg" alt="">
-                <span class="category">Backend Developer</span>
-                <h4>Nigar Shirinova</h4>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>TESTIMONIALS</h6>
-            <h2>What they say about us?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- testimonials end -->
+	<!-- Latest Courses End -->
+	<!-- Count Start-->
+	<div class="section fun-facts">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+								<div class="counter">
+									<h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+									<p class="count-text ">Happy Students</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="counter">
+									<h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
+									<p class="count-text ">Course Hours</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="counter">
+									<h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+									<p class="count-text ">Employed Students</p>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6">
+								<div class="counter end">
+									<h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
+									<p class="count-text ">Years Experience</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Count End -->
+	<!-- Team Start -->
+	<div class="team section" id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="team-member">
+						<div class="main-content">
+							<img src="~/images/member-01.jpg" alt="">
+							<span class="category">Backend Teacher</span>
+							<h4>Nigar Shirinova</h4>
+							<ul class="social-icons">
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
 
 
-  <!-- contact us start -->
-  <div class="contact-us section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6  align-self-center">
-          <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h2>Feel free to contact us anytime</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic! Molestias nostrum quae esse consequuntur cupiditate atque, corrupti et id fugit vero. Facere repellat magni neque enim consectetur in accusamus!</p>
-            <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valid: <em>27 April 2025</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
-              <a asp-action="register" asp-controller="account"><i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="contact-us-content">
-            <form id="contact-form" action="" method="post">
-              <div class="row">
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="name" name="name" id="name" placeholder="Name" required>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="text" name="email" id="email"  placeholder="E-mail" required="">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Send Message To Admin</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <!-- contact us end -->
+	<!-- Team End -->
+	<!-- testimonials start -->
 
-  <!-- footer start -->
-  <footer>
-    <div class="container">
-      <div class="col-lg-12">
-        <p>Copyright © 2025 Scholar Organization. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-  <!-- footer end -->
+	<div class="section testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="owl-carousel owl-testimonials">
+						<div class="item">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
+							<div class="author">
+								<img src="~/images/member-01.jpg" alt="">
+								<span class="category">Backend Developer</span>
+								<h4>Nigar Shirinova</h4>
+							</div>
+						</div>
+						<div class="item">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
+							<div class="author">
+								<img src="~/images/member-01.jpg" alt="">
+								<span class="category">Backend Developer</span>
+								<h4>Nigar Shirinova</h4>
+							</div>
+						</div>
 
-    <script src="~/vendor/jquery/jquery.min.js"></script>
-    <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+					</div>
+				</div>
+				<div class="col-lg-5 align-self-center">
+					<div class="section-heading">
+						<h6>TESTIMONIALS</h6>
+						<h2>What they say about us?</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <script src="~/js/isotope.min.js"></script>
-  <script src="~/js/owl-carousel.js"></script>
-  <script src="~/js/counter.js"></script>
-  <script src="~/js/custom.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </body>
+	<!-- testimonials end -->
+	<!-- contact us start -->
+	<div class="contact-us section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6  align-self-center">
+					<div class="section-heading">
+						<h6>Contact Us</h6>
+						<h2>Feel free to contact us anytime</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, hic! Molestias nostrum quae esse consequuntur cupiditate atque, corrupti et id fugit vero. Facere repellat magni neque enim consectetur in accusamus!</p>
+						<div class="special-offer">
+							<span class="offer">off<br><em>50%</em></span>
+							<h6>Valid: <em>27 April 2025</em></h6>
+							<h4>Special Offer <em>50%</em> OFF!</h4>
+							@if(Model.UserName==null)
+							{
+								<a asp-action="register" asp-controller="account"><i class="fa fa-angle-right"></i></a>
+							}
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="contact-us-content">
+						<form id="contact-form" action="" method="post">
+							<div class="row">
+								<div class="col-lg-12">
+									<fieldset>
+										<input type="name" name="name" id="name" placeholder="Name" required>
+									</fieldset>
+								</div>
+								<div class="col-lg-12">
+									<fieldset>
+										<input type="text" name="email" id="email" placeholder="E-mail" required="">
+									</fieldset>
+								</div>
+								<div class="col-lg-12">
+									<fieldset>
+										<textarea name="message" id="message" placeholder="Your Message"></textarea>
+									</fieldset>
+								</div>
+								<div class="col-lg-12">
+									<fieldset>
+										<button type="submit" id="form-submit" class="orange-button">Send Message To Admin</button>
+									</fieldset>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- contact us end -->
+	<!-- footer start -->
+	<footer>
+		<div class="container">
+			<div class="col-lg-12">
+				<p>Copyright © 2025 Scholar Organization. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+
+	<script src="~/vendor/jquery/jquery.min.js"></script>
+	<script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="~/js/isotope.min.js"></script>
+	<script src="~/js/owl-carousel.js"></script>
+	<script src="~/js/counter.js"></script>
+	<script src="~/js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
 </html>
