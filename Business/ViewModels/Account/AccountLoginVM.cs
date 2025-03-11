@@ -18,5 +18,6 @@ namespace Business.ViewModels.Account
         [DataType(DataType.Password)]
         public string Password { get; set; }
         public string? FullName { get; set; }
+        public string? UserId { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\css\dashboard.css
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\vendor\jquery\jquery.min.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
@@ -34,6 +35,7 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\vendor\jquery\jquery.sli
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\jquery-validation\dist\additional-methods.js
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\js\chart.js
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
@@ -55,6 +57,7 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\vendor\jquery\jquery.min
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\css\balance.css
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\css\main.css
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
@@ -78,6 +81,8 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\vendor\jquery\jquery.sli
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\css\animate.css
+wwwroot\css\balance.css
+wwwroot\css\dashboard.css
 wwwroot\css\flex-slider.css
 wwwroot\css\fontawesome.css
 wwwroot\css\login.css
@@ -101,6 +106,7 @@ wwwroot\images\service-01.png
 wwwroot\images\service-02.png
 wwwroot\images\service-03.png
 wwwroot\images\testimonial-author.jpg
+wwwroot\js\chart.js
 wwwroot\js\counter.js
 wwwroot\js\custom.js
 wwwroot\js\isotope.min.js

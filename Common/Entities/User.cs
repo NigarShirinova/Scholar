@@ -10,5 +10,7 @@ namespace Common.Entities
     public class User : IdentityUser
     {
         public string FullName { get; set; }
+        public decimal Balance { get; set; }
+        public List<Transaction> Transactions { get; set; } = new List<Transaction>();
     }
 }

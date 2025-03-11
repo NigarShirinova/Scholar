@@ -1,0 +1,143 @@
+﻿@using Business.ViewModels.TeacherDashboard
+@model BalanceIndexVM
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/balance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Balance</title>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Scholar</h2>
+        <ul>
+            <a asp-action="Index" asp-controller="TeacherDashboard">
+            <li><i class="fa-solid fa-briefcase"></i>Workspace</li>
+            </a>
+            <li><i class="fa-solid fa-list-check"></i><p>Tasks & Exams</p></li>
+            <a asp-action="Balance" asp-controller="TeacherDashboard">
+            <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li>
+            </a>
+            <a asp-action="Index" asp-controller="Home">
+            <li><i class="fa-solid fa-house"></i><p>Go Home</p></li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="header">Balance Overview</div>
+
+        <div class="balance-container">
+            <div class="card">
+                <h2>Your Current Balance</h2>
+                <p class="balance-amount">$ @Model.Balance</p>
+
+                <!-- Balance Increase Form -->
+                <form asp-action="IncreaseBalance" asp-controller="Payment" method="post">
+                    <input style = "border-radius:50px; padding:10px; width: 150px; font-size: 15px; background-color:lightgray; border:hidden"type="number" name="amount" placeholder="Enter Amount" required min="1" step="0.01" />
+                    <button  style="border:hidden" type="submit" class="button">Increase Your Balance</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Withdrawable Money</h2>
+                <p class="balance-amount">$ @Model.Balance.ToString("0.00")</p>
+                <form asp-action="WithdrawBalance" asp-controller="Payment" method="post">
+                    <input style="border-radius:50px; padding:10px; width: 150px; font-size: 15px; background-color:lightgray; border:hidden" type="number" name="amount" placeholder="Enter Amount" required min="1" step="0.01" />
+                    <button style="border:hidden" type="submit" class="button">Withdraw Money</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="transaction-table">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+
+            @if (Model.TransactionList != null && Model.TransactionList.Any())
+            {
+                @foreach (var transaction in Model.TransactionList)
+                {
+                    <tr>
+                        <td>@transaction.DateTime.ToString("yyyy-MM-dd")</td>
+                        <td>@transaction.DateTime.ToString("HH:mm")</td>
+                        <td>$@transaction.Amount.ToString("0.00")</td>
+                        <td style="color: @(transaction.TransactionType == Common.Constants.TransactionType.Income ? "rgb(1, 86, 1)" : "rgb(162, 3, 3)"); font-weight: bold;">
+                            @transaction.TransactionType
+                        </td>
+                    </tr>
+                }
+
+
+
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4" style="text-align: center;">No transactions found.</td>
+                </tr>
+            }
+        </table>
+    </div>
+
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        document.querySelector("form").addEventListener("submit", async function (event) {
+            event.preventDefault();
+            let amount = document.querySelector("input[name='amount']").value;
+
+            const response = await fetch('/Payment/IncreaseBalance', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams({ amount: amount })
+            });
+
+            const result = await response.json();
+            if (result.id) {
+                const stripe = Stripe("pk_test_51R037cIISdgp6SJ3h1q0zKlI1N8cPpDglpB51usTUMgppe3HC77CmBkNWWktC3E4JE1VjbtUxJjcpsICWGJIRjy200bjUDt4qc");
+                stripe.redirectToCheckout({ sessionId: result.id });
+            } else {
+                alert("Payment failed: " + (result.error || "Unknown error"));
+            }
+        });
+    </script>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", async function (event){
+            let amount = document.querySelector("input[name='amount']").value;
+
+            if (!amount || amount <= 0) {
+                alert("Enter a valid amount to withdraw.");
+                return;
+            }
+
+            const response = await fetch('/Payment/Withdraw', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: amount })
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                alert("Withdrawal request submitted successfully.");
+                location.reload(); 
+            } else {
+                alert("Withdrawal failed: " + (result.error || "Unknown error"));
+            }
+        });
+    </script>
+
+
+</body>
+</html>

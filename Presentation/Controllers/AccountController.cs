@@ -2,6 +2,7 @@
 using Business.Abstract;
 using Business.ViewModels.Account;
 using Business.ViewModels.Home;
+using Business.ViewModels.TeacherDashboard;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -97,6 +98,9 @@ namespace Presentation.Controllers
 
             };
 
+            HttpContext.Session.SetString("UserName", model.FullName);
+
+
             return RedirectToAction("Index", "Home", homeIndexVM);
         }
 
@@ -104,6 +108,7 @@ namespace Presentation.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
+            HttpContext.Session.Clear();
             await _accountService.LogoutAsync();
             return RedirectToAction("Login");
         }

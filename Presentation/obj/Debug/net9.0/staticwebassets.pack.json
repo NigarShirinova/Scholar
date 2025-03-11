@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\css\\animate.css"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\balance.css",
+      "PackagePath": "staticwebassets\\css\\balance.css"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\flex-slider.css",
       "PackagePath": "staticwebassets\\css\\flex-slider.css"
     },
@@ -95,6 +103,10 @@
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\images\\testimonial-author.jpg",
       "PackagePath": "staticwebassets\\images\\testimonial-author.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\chart.js",
+      "PackagePath": "staticwebassets\\js\\chart.js"
     },
     {
       "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\counter.js",

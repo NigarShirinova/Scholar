@@ -12,3 +12,4 @@ C:\Users\ASUS\source\repos\Scholar\Common\obj\Debug\net9.0\refint\Common.dll
 C:\Users\ASUS\source\repos\Scholar\Common\obj\Debug\net9.0\Common.pdb
 C:\Users\ASUS\source\repos\Scholar\Common\obj\Debug\net9.0\Common.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\Scholar\Common\obj\Debug\net9.0\ref\Common.dll
+C:\Users\ASUS\source\repos\Scholar\Common\obj\Debug\net9.0\Common.sourcelink.json

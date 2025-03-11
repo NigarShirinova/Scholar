@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5YfzYQPiY6WgKnKvozPTl6udsbB04iPLSCeZxE0pcRw=",
+  "Hash": "tkObXSnoTs3nFVfFxHUzs/7YcaL4XDb/QMufbSc+G+A=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\1cayyboa5f-bwnxw6o4sg.gz",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/dashboard#[.{fingerprint=bwnxw6o4sg}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "u8d42w86ry",
+      "Integrity": "8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\1nf38922lh-b804xvqo1w.gz",
@@ -773,6 +794,27 @@
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\i0qpvn0e0s-5tlyafl6k0.gz",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/chart#[.{fingerprint=5tlyafl6k0}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\chart.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "bivd6rvrly",
+      "Integrity": "PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\chart.js"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\i1aj1m5n6l-nvvlpmu67g.gz",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
@@ -1212,6 +1254,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\np9zmx9xwu-g46yqf99oo.gz",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/balance#[.{fingerprint=g46yqf99oo}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\balance.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "n5rng2zbwt",
+      "Integrity": "OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\balance.css"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\nr2s4old85-psdlv0qxtk.gz",
@@ -1697,6 +1760,48 @@
       "OriginalItemSpec": "wwwroot\\css\\animate.css"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\balance.css",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/balance#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g46yqf99oo",
+      "Integrity": "gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\balance.css"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bwnxw6o4sg",
+      "Integrity": "xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\flex-slider.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
@@ -2178,6 +2283,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\testimonial-author.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\chart.js",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/chart#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5tlyafl6k0",
+      "Integrity": "F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chart.js"
     },
     {
       "Identity": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\counter.js",
@@ -4156,6 +4282,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-rmS6E1hA3Hc295TttjlICb1S3AAbhmsYxgZ6IRtu6mQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/balance.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\np9zmx9xwu-g46yqf99oo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001176470588"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "849"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 20:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/balance.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\balance.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 20:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/balance.css.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\np9zmx9xwu-g46yqf99oo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "849"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 20:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U="
+        }
+      ]
+    },
+    {
+      "Route": "css/balance.g46yqf99oo.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\np9zmx9xwu-g46yqf99oo.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001176470588"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "849"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 20:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g46yqf99oo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/balance.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/balance.g46yqf99oo.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\balance.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2811"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 20:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g46yqf99oo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/balance.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOZNhWNLZ/Dik7WnB3xs5zhQerPIAa53kc+SVccwEnc="
+        }
+      ]
+    },
+    {
+      "Route": "css/balance.g46yqf99oo.css.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\np9zmx9xwu-g46yqf99oo.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "849"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 20:24:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g46yqf99oo"
+        },
+        {
+          "Name": "label",
+          "Value": "css/balance.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OzGw+OEP6McX69PmXnNWc9ErOKEJ8e0Z8npgPsQvp3U="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.bwnxw6o4sg.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\1cayyboa5f-bwnxw6o4sg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000679809653"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1470"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 19:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bwnxw6o4sg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.bwnxw6o4sg.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 19:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bwnxw6o4sg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.bwnxw6o4sg.css.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\1cayyboa5f-bwnxw6o4sg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 19:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bwnxw6o4sg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\1cayyboa5f-bwnxw6o4sg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000679809653"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1470"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 19:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6033"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 19:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xZAVFjW1h+uO7RndFp+b1ZQxqBrB8MRusiAWI5iRubE="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\1cayyboa5f-bwnxw6o4sg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 19:51:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8iF0ESQdIa3PlNuBSYefLFmYr2OAznW4tJukTDii28c="
         }
       ]
     },
@@ -7554,6 +8276,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-76cRMQfb7Gz4t0yDhnve7UMPlmHGjWn6ld2DbRcfRHI="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.5tlyafl6k0.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\i0qpvn0e0s-5tlyafl6k0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002487562189"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 17:12:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5tlyafl6k0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.5tlyafl6k0.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\chart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "891"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 17:12:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5tlyafl6k0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.5tlyafl6k0.js.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\i0qpvn0e0s-5tlyafl6k0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 17:12:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5tlyafl6k0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chart.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\i0qpvn0e0s-5tlyafl6k0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002487562189"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 17:12:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.js",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\chart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "891"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 17:12:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F6dxNRJvDsD9O98CSLkUXwms4Zfbfc2GbpgiT5jPXt0="
+        }
+      ]
+    },
+    {
+      "Route": "js/chart.js.gz",
+      "AssetFile": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\obj\\Debug\\net9.0\\compressed\\i0qpvn0e0s-5tlyafl6k0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 17:12:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PV3s00d1J4r+inrteQ4PskmUVdbzwIdCBoVZOQ7xYrk="
         }
       ]
     },

@@ -17,7 +17,7 @@ namespace Data.Contexts
         }
         public DbSet<UserStudent> UserStudents { get; set; }
         public DbSet<UserTeacher> UserTeachers { get; set; }
-
+        public DbSet<Transaction> Transactions { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -28,6 +28,14 @@ namespace Data.Contexts
             .HasValue<User>("User")
             .HasValue<UserStudent>("UserStudent")
             .HasValue<UserTeacher>("UserTeacher");
+
+            modelBuilder.Entity<User>()
+                .Property(u => u.Balance)
+                .HasColumnType("decimal(18,2)"); 
+
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Amount)
+                .HasColumnType("decimal(18,2)");
         }
 
     }

@@ -1,10 +1,12 @@
 using Business.Abstract;
 using Business.Concrete;
 using Business.ViewModels.Email;
+using Business.ViewModels.Stripe;
 using Common.Entities;
 using Data.Contexts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,10 +34,18 @@ var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<Ema
 builder.Services.AddSingleton(emailConfig);
 
 // Register services
-builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IAccountService, Business.Concrete.AccountService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 
+
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+
+
+builder.Services.AddSession();
+
+
 var app = builder.Build();
+app.UseSession();
 
 if (!app.Environment.IsDevelopment())
 {
@@ -44,7 +54,11 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();  
+app.UseStaticFiles();
+
+
+
+StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe")["SecretKey"];
 
 app.UseRouting();
 app.UseAuthentication(); 

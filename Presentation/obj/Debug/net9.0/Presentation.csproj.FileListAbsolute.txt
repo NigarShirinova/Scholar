@@ -150,7 +150,6 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.Ident
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.CodeDom.dll
@@ -160,15 +159,12 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Composit
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Composition.Runtime.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Drawing.Common.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Security.Permissions.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Text.Json.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -240,12 +236,7 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win-ar
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Business.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Common.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Data.dll
@@ -258,3 +249,10 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\BouncyCastle.Cr
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\MailKit.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\MimeKit.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.sourcelink.json
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\1cayyboa5f-bwnxw6o4sg.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\i0qpvn0e0s-5tlyafl6k0.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\np9zmx9xwu-g46yqf99oo.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\RestSharp.dll
+C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Stripe.dll
+C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Stripe.net.dll
