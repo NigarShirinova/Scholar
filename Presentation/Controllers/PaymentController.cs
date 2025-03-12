@@ -44,16 +44,13 @@ namespace Presentation.Controllers
                 PaymentToken = Guid.NewGuid(),
                 Amount = amount
             };
-
+            user.Balance = user.Balance + transaction.Amount;
             _context.Transactions.Add(transaction);
             await _context.SaveChangesAsync();
 
             var baseUrl = $"{Request.Scheme}://{Request.Host}";
             var successUrl = $"{baseUrl}{Url.Action("Success", "Payment", new { token = transaction.PaymentToken })}";
             var cancelUrl = $"{baseUrl}{Url.Action("Cancel", "Payment", new { token = transaction.PaymentToken })}";
-
-            Console.WriteLine($"Success URL: {successUrl}");
-            Console.WriteLine($"Cancel URL: {cancelUrl}");
 
             var options = new SessionCreateOptions
             {
@@ -83,7 +80,8 @@ namespace Presentation.Controllers
             {
                 var service = new SessionService();
                 Session session = await service.CreateAsync(options);
-                Console.WriteLine("Session Created: " + session.Id);
+               
+                
                 return Json(new { id = session.Id});
             }
             catch (StripeException e)
@@ -131,7 +129,7 @@ namespace Presentation.Controllers
                 transaction.OrderStatus = OrderStatus.Success;
                 _context.Transactions.Update(transaction);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Balance", "TeacherDashboard");
+                return RedirectToAction("Balance", "Dashboard");
             }
             catch (Exception e)
             {

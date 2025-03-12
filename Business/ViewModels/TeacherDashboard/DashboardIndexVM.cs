@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Business.ViewModels.TeacherDashboard
 {
-    public class TeacherDashboardIndexVM
+    public class DashboardIndexVM
     {
         public decimal Balance { get; set; }
+        public string UserType { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace Business.Concrete
 
         public async Task<IdentityResult> RegisterUserAsync(AccountRegisterVM model)
         {
-            if (model.Discriminator == "UserStudent")
+            if (model.Role == "UserStudent")
             {
                 var user = new UserStudent
                 {

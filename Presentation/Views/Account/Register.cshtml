@@ -29,14 +29,15 @@
         <input asp-for="ConfirmPassword" placeholder="Confirm Password" class="form-control" type="password" />
         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 
+
         <div class="role-container">
-            <input type="text" placeholder="Choose your role for register:" id="role" readonly>
-            <select asp-for="Discriminator" class="form-control">
+            <label for="role">Choose your role for register:</label>
+            <select id="role" name="Role" class="form-control">
                 <option value="" disabled selected>Select</option>
-                <option value="Teacher">Teacher</option>
-                <option value="Student">Student</option>
+                <option value="UserTeacher">Teacher</option>
+                <option value="UserStudent">Student</option>
             </select>
-            <span asp-validation-for="Discriminator" class="text-danger"></span>
+            <span asp-validation-for="Role" class="text-danger"></span>
         </div>
 
 

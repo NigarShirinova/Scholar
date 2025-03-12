@@ -18,7 +18,7 @@ namespace Business.ViewModels.Account
         public string FullName { get; set; }
 
         [Required(ErrorMessage = "It is a required field!")]
-        public string Discriminator { get; set; }
+        public string Role { get; set; }
 
         [Required(ErrorMessage = "It is a required field!")]
         [DataType(DataType.Password)]

@@ -9,12 +9,13 @@ namespace Presentation.Controllers
         public IActionResult Index()
         {
             var userName = HttpContext.Session.GetString("UserName");
-
+            
            
 
             var model = new HomeIndexVM
             {
-                UserName = userName
+                UserName = userName,
+
             };
 
             return View(model);

@@ -12,5 +12,6 @@ namespace Business.ViewModels.TeacherDashboard
      
         public decimal Balance { get; set; } 
         public List<Transaction> TransactionList { get; set; }
+        public string UserType { get; set; }
     }
 }

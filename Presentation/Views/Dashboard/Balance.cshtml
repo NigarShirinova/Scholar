@@ -1,6 +1,7 @@
 ﻿@using Business.ViewModels.TeacherDashboard
 @model BalanceIndexVM
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="~/css/balance.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Balance</title>
 </head>
 <body>
@@ -17,18 +18,33 @@
     <!-- Sidebar -->
     <nav class="sidebar">
         <h2>Scholar</h2>
-        <ul>
-            <a asp-action="Index" asp-controller="TeacherDashboard">
-            <li><i class="fa-solid fa-briefcase"></i>Workspace</li>
-            </a>
-            <li><i class="fa-solid fa-list-check"></i><p>Tasks & Exams</p></li>
-            <a asp-action="Balance" asp-controller="TeacherDashboard">
-            <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li>
-            </a>
-            <a asp-action="Index" asp-controller="Home">
-            <li><i class="fa-solid fa-house"></i><p>Go Home</p></li>
-            </a>
-        </ul>
+        @if (Model.UserType == "Teacher")
+        {
+            <ul>
+                <a asp-action="index" asp-controller="Dashboard">
+                <li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
+                <li><i class="fa-solid fa-list-check"></i><p>Tasks & Exams</p></li>
+                <a asp-action="Balance" asp-controller="Dashboard">
+                <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
+                <a asp-action="index" asp-controller="Home">
+                <li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
+            </ul>
+        }
+
+        else if (Model.UserType == "Student")
+        {
+            <ul>
+                <a asp-action="index" asp-controller="Dashboard">
+                <li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
+                <li><i class="fa-solid fa-list-check"></i><p>Tasks & Exams</p></li>
+                <a href="#">
+                <li><i class="fa-solid fa-laptop"></i><p>Buy Lesson</p></li> </a>
+                <a asp-action="Balance" asp-controller="Dashboard">
+                <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
+                <a asp-action="index" asp-controller="Home">
+                <li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
+            </ul>
+        }
     </nav>
 
     <div class="content">
