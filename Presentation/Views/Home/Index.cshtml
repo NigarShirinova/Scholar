@@ -265,48 +265,8 @@
 	</div>
 
 	<!-- About us End -->
-	<!-- Latest Courses Start -->
 
-	<section class="section courses" id="courses">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="section-heading">
-						<h6>Latest Courses</h6>
-						<h2>Latest Courses</h2>
-					</div>
-				</div>
-			</div>
-			<ul class="event_filter">
-				<li>
-					<a class="is_active" href="#" data-filter="*">Show All</a>
-				</li>
-				<li>
-					<a href="#" data-filter=".backend">Backend</a>
-				</li>
-				<li>
-					<a href="#" data-filter=".math">Mathematics</a>
-				</li>
-			</ul>
-			<div class="row event_box">
-				<div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-					<div class="events_item">
-						<div class="thumb">
-							<a href="#"><img src="~/images/course-01.png" alt=""></a>
-							<span class="category">Backend</span>
-							<span class="price"><h6><em>$</em>100</h6></span>
-						</div>
-						<div class="down-content">
-							<span class="author">Nigar Shirinova</span>
-							<h4>Learn Backend Development!</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- Latest Courses End -->
 	<!-- Count Start-->
 	<div class="section fun-facts">
 		<div class="container">
@@ -349,22 +309,25 @@
 	<div class="team section" id="team">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
-					<div class="team-member">
-						<div class="main-content">
-							<img src="~/images/member-01.jpg" alt="">
-							<span class="category">Backend Teacher</span>
-							<h4>Nigar Shirinova</h4>
-							<ul class="social-icons">
-								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-							</ul>
+				@foreach (var teamMember in Model.teamMembers)
+				{
+					<div class="col-lg-3 col-md-6">
+						<div class="team-member">
+							<div class="main-content">
+								<img src="~/uploads/@teamMember.PhotoName" alt="">
+								<span class="category">@teamMember.Position</span>
+								<h4>@teamMember.FullName</h4>
+								<ul class="social-icons">
+									<li><a href="@teamMember.FacebookLink"><i class="fab fa-facebook"></i></a></li>
+									<li><a href="@teamMember.InstagramLink"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="@teamMember.LinkedinLink"><i class="fab fa-linkedin"></i></a></li>
+								</ul>
+							</div>
 						</div>
+
+
 					</div>
-
-
-				</div>
+				}
 			</div>
 		</div>
 	</div>
@@ -398,8 +361,8 @@
 				</div>
 				<div class="col-lg-5 align-self-center">
 					<div class="section-heading">
-						<h6>TESTIMONIALS</h6>
-						<h2>What they say about us?</h2>
+						<h6>Our Team</h6>
+						<h2>What they think about us?</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
 					</div>
 				</div>
@@ -431,21 +394,24 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="contact-us-content">
-						<form id="contact-form" action="" method="post">
+						<form asp-action="CreateMessage" asp-controller="Home" method="post" type="POST" id="contact-form">
 							<div class="row">
 								<div class="col-lg-12">
 									<fieldset>
-										<input type="name" name="name" id="name" placeholder="Name" required>
+										<input asp-for="ContactMessage.Name" type="text" id="name" placeholder="Name" required>
+										<span asp-validation-for="ContactMessage.Name" class="text-danger"></span>
 									</fieldset>
 								</div>
 								<div class="col-lg-12">
 									<fieldset>
-										<input type="text" name="email" id="email" placeholder="E-mail" required="">
+										<input asp-for="ContactMessage.Email" type="text" id="email" placeholder="E-mail" required>
+										<span asp-validation-for="ContactMessage.Email" class="text-danger"></span>
 									</fieldset>
 								</div>
 								<div class="col-lg-12">
 									<fieldset>
-										<textarea name="message" id="message" placeholder="Your Message"></textarea>
+										<textarea asp-for="ContactMessage.Content" id="message" placeholder="Your Message"></textarea>
+										<span asp-validation-for="ContactMessage.Content" class="text-danger"></span>
 									</fieldset>
 								</div>
 								<div class="col-lg-12">
@@ -455,6 +421,7 @@
 								</div>
 							</div>
 						</form>
+
 					</div>
 				</div>
 			</div>

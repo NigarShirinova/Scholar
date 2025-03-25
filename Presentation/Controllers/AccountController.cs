@@ -97,6 +97,7 @@ namespace Presentation.Controllers
                 UserName = model.FullName,
 
             };
+            HttpContext.Session.SetString("Email", model.Email);
 
             HttpContext.Session.SetString("UserName", model.FullName);
 

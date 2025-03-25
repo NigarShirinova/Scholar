@@ -9,6 +9,7 @@
 
 body {
     display: flex;
+    overflow: visible;
     height: 100vh;
     background: #f8f9fc;
 }
@@ -23,6 +24,8 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+ 
+    height: 100%;
 }
 
 .sidebar h2 {

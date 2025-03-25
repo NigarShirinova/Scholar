@@ -18,6 +18,9 @@ namespace Data.Contexts
         public DbSet<UserStudent> UserStudents { get; set; }
         public DbSet<UserTeacher> UserTeachers { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Lesson> Lessons { get; set; }
+        public DbSet<TeamMember> TeamMembers { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

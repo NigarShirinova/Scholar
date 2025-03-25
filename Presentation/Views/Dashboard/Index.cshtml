@@ -4,267 +4,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="~/css/dashboard.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="~/css/dashboard.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+	integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <nav class="sidebar">
-        <h2>Scholar</h2>
-        @if (Model.UserType == "Teacher")
-        {
-            <ul>
-                <a asp-action="index" asp-controller="Dashboard" >
-                    <li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
-                <li><i class="fa-solid fa-list-check"></i><p>Tasks & Exams</p></li>
-                <a asp-action="Balance" asp-controller="Dashboard">
-                    <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
-                <a asp-action="index" asp-controller="Home">
-                    <li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
-            </ul>}
+	<!-- Sidebar -->
+	<nav class="sidebar">
+		<h2>Scholar</h2>
+		@if (Model.UserType == "Teacher")
+		{
+			<ul>
+				<a asp-action="index" asp-controller="Dashboard">
+					<li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
+				
+				<a asp-action="Balance" asp-controller="Dashboard">
+					<li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
+				<a asp-action="index" asp-controller="Home">
+					<li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
+			</ul>
+		}
 
-        else if(Model.UserType == "Student"){
-            <ul>
-                <a asp-action="index" asp-controller="Dashboard">
-                    <li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
-                <li><i class="fa-solid fa-list-check"></i><p>Tasks & Exams</p></li>
-                <a href="#">
-                    <li><i class="fa-solid fa-laptop"></i><p>Buy Lesson</p></li> </a>
-                <a asp-action="Balance" asp-controller="Dashboard">
-                    <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
-                <a asp-action="index" asp-controller="Home">
-                    <li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
-            </ul>
-        }
-    </nav>
+		else if (Model.UserType == "Student")
+		{
+			<ul>
+				<a asp-action="index" asp-controller="Dashboard">
+					<li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
+				
+				<a asp-action="BuyLesson" asp-controller="Dashboard">
+					<li><i class="fa-solid fa-laptop"></i><p>Buy Lesson</p></li> </a>
+				<a asp-action="Balance" asp-controller="Dashboard">
+					<li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
+				<a asp-action="index" asp-controller="Home">
+					<li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
+			</ul>
+		}
+	</nav>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <header class="header">
-            @if (Model.UserType == "Teacher")
-            {
-                <h1>Teacher Dashboard</h1>
-            }
-            else{
-                <h1>Student Dashboard</h1>
-            }
-        </header>
+	<!-- Main Content -->
+	<div class="main-content">
+		<header class="header">
+			@if (Model.UserType == "Teacher")
+			{
+				<h1>Teacher Dashboard</h1>
+			}
+			else
+			{
+				<h1>Student Dashboard</h1>
+			}
+		</header>
 
-        <!-- Dashboard Cards -->
-        <section class="dashboard-cards">
-            @if (Model.UserType == "Teacher")
-            {
-                <div class="card">
-                    <h3>All Students</h3>
-                    <p>10 students</p>
-                </div>
-                <div class="card">
-                    <h3>Your Income</h3>
-                    <p>$1000</p>
-                </div>
-                <div class="card">
-                    <h3>Lesson Hours</h3>
-                    <p>300 hours</p>
-                </div>
-            }
+		<!-- Dashboard Cards -->
+		<section class="dashboard-cards">
+			@if (Model.UserType == "Teacher")
+			{
+				<div class="card">
+					<h3>All Students</h3>
+					<p>10 students</p>
+				</div>
+				<div class="card">
+					<h3>Your Income</h3>
+					<p>$1000</p>
+				</div>
+				<div class="card">
+					<h3>Lesson Hours</h3>
+					<p>300 hours</p>
+				</div>
+			}
 
-            else{
-                <div class="card">
-                    <h3>All Lessons</h3>
-                    <p>10 lessons</p>
-                </div>
-                <div class="card">
-                    <h3>Your Expense</h3>
-                    <p>$1000</p>
-                </div>
-                <div class="card">
-                    <h3>Lesson Hours</h3>
-                    <p>300 hours</p>
-                </div>
-            }
-
-
-        </section>
-
-        <div class="container">
-            <!-- Recent Lessons Table -->
-            <section class="recentlessons">
-                @if (Model.UserType == "Teacher")
-                {
-
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Student</th>
-                                <th>Lesson Name</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Alice Johnson</td>
-                                <td>Mathematics</td>
-                                <td>2025-03-01</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Brown</td>
-                                <td>Physics</td>
-                                <td>2025-03-02</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>Chemistry</td>
-                                <td>2025-03-03</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Brown</td>
-                                <td>Physics</td>
-                                <td>2025-03-02</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>Chemistry</td>
-                                <td>2025-03-03</td>
-                                <td>14:00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                }
-                else{
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Teacher</th>
-                                <th>Lesson Name</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Alice Johnson</td>
-                                <td>Mathematics</td>
-                                <td>2025-03-01</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Brown</td>
-                                <td>Physics</td>
-                                <td>2025-03-02</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>Chemistry</td>
-                                <td>2025-03-03</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Michael Brown</td>
-                                <td>Physics</td>
-                                <td>2025-03-02</td>
-                                <td>14:00</td>
-                            </tr>
-                            <tr>
-                                <td>Sarah Williams</td>
-                                <td>Chemistry</td>
-                                <td>2025-03-03</td>
-                                <td>14:00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                }
-            </section>
-
-            <!-- Chart Section -->
-            <div class="chart">
-                <canvas id="chart"></canvas>
-                <span id="done">60</span>
-                <span id="waiting">40</span>
-            </div>
-        </div>
-
-        <!-- Balance & Available Dates -->
-        <div class="row3">
-            <div class="balance-card">
-                <div class="balance">
-                    <p>Your Balance</p>
-                    <h2>$ @Model.Balance</h2>
-                </div>
-                <div class="buttons">
-                    <a asp-action="Balance" asp-controller="TeacherDashboard"><button>Increase Your Balance</button></a>
-                </div>
-            </div>
+			else
+			{
+				<div class="card">
+					<h3>All Lessons</h3>
+					<p>10 lessons</p>
+				</div>
+				<div class="card">
+					<h3>Your Expense</h3>
+					<p>$1000</p>
+				</div>
+				<div class="card">
+					<h3>Lesson Hours</h3>
+					<p>300 hours</p>
+				</div>
+			}
 
 
-            @if (Model.UserType == "Teacher")
-            {
+		</section>
 
-                <div class="availabledates">
-                    <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Time</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2025-03-01</td>
-                            <td>14:00</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="fa-solid fa-pencil"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2025-03-02</td>
-                            <td>14:00</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="fa-solid fa-pencil"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2025-03-02</td>
-                            <td>14:00</td>
-                            <td>
-                                <div class="actions">
-                                    <i class="fa-solid fa-pencil"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
+		<div class="container">
+			<!-- Recent Lessons Table -->
+			<section class="recentlessons">
+				@if (Model.UserType == "Teacher")
+				{
+					<table>
+							<thead>
+								<tr>
+									<th>Student</th>
+									<th>Lesson Name</th>
+									<th>Date</th>
+									<th>Time</th>
+								</tr>
+							</thead>
+							<tbody>
 
-                    </tbody>
-                </table>
-                <div class="addbutton">
-                    <button>Add New Available Date</button>
-                </div>
-            </div>
-            }
-        </div>
-    </div> <!-- End Main Content -->
-    <!-- JavaScript Files -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="~/js/chart.js"></script>
+					@foreach (var lesson in Model.Lessons)
+					{
+						
+								@if (lesson.IsTaken == true && lesson.Teacher.Email == Model.Email)
+								{
+									<tr>
+										<td>@lesson.Student.FullName</td>
+										<td>@lesson.Name</td>
+										<td>@lesson.LessonDate.ToString("yyyy-MM-dd")</td>
+										<td>@lesson.LessonDate.ToString("HH:mm")</td>
+									</tr>
+								}
+								
+						
+					}
+						</tbody>
+					</table>
+				}
+				else
+				{
+					<table>
+						<thead>
+							<tr>
+								<th>Teacher</th>
+								<th>Lesson Name</th>
+								<th>Date</th>
+								<th>Time</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach(var lesson in Model.Lessons){
+								@if (lesson.Student != null && lesson.Student.Email != null && lesson.Student.Email == Model.Email)
+								{
+									<tr>
+										<td>@lesson.Student.FullName</td>
+										<td>@lesson.Name</td>
+										<td>@lesson.LessonDate.ToString("yyyy-MM-dd")</td>
+										<td>@lesson.LessonDate.ToString("HH:mm")</td>
+									</tr>
+								}
+							}
+							
+							
+						</tbody>
+					</table>
+				}
+			</section>
+
+			<!-- Chart Section -->
+			<div class="chart">
+				<canvas id="chart"></canvas>
+				<span id="done">60</span>
+				<span id="waiting">40</span>
+			</div>
+		</div>
+
+		<!-- Balance & Available Dates -->
+		<div class="row3">
+			<div class="balance-card">
+				<div class="balance">
+					<p>Your Balance</p>
+					<h2>$ @Model.Balance</h2>
+				</div>
+				<div class="buttons">
+					<a asp-action="Balance" asp-controller="TeacherDashboard"><button>Increase Your Balance</button></a>
+				</div>
+			</div>
+
+
+			@if (Model.UserType == "Teacher")
+			{
+
+				<div class="availabledates">
+					<table>
+						<thead>
+							<tr>
+								<th>Date</th>
+								<th>Time</th>
+								<th>Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach(var lesson in Model.Lessons){
+								@if(lesson.IsTaken == false){
+								<tr>
+									<td>@lesson.LessonDate.ToString("yyyy-MM-dd")</td>
+									<td>@lesson.LessonDate.ToString("HH:mm")</td>
+									<td>
+										@lesson.Name
+									</td>
+								</tr>
+								}
+							}
+							
+
+						</tbody>
+					</table>
+					<div class="addbutton">
+						<a asp-controller="Dashboard" asp-action="AddLesson">
+							<button>Add New Lesson</button>
+						</a>
+					</div>
+				</div>
+			}
+		</div>
+	</div> <!-- End Main Content -->
+	<!-- JavaScript Files -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="~/js/chart.js"></script>
 
 </body>
 </html>

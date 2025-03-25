@@ -1,0 +1,41 @@
+﻿@{
+	Layout = null;
+}
+@using Presentation.Areas.Admin.Models.Controller
+@model AccountLoginVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form  asp-action="Login" asp-controller="Account" method="post">
+        <h3 style="margin-top:100px">Login Here</h3>
+
+        <input style="height: 60px; font-size: 20px;"  asp-for="Email" placeholder="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+
+        <input style="height: 60px; font-size: 20px;" asp-for="Password" placeholder="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+
+
+        <button style="height: 50px ; width: 50%; font-size: 18px;margin-left: 25% ;padding: 10px 20px;" >Log In</button>
+        
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
+

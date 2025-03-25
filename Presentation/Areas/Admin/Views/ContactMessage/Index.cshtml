@@ -1,0 +1,68 @@
+﻿@using Presentation.Areas.Admin.Models.ContactMessage
+@model ContactMessageIndexVM
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Contact Messages</h1>
+</div>
+
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Content</th>
+            <th scope="col">Created Date</th>
+ 
+            <th scope="col">Mark as Read</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model.ContactMessages)
+        {
+            <tr data-id="@message.Id" class="@((message.IsRead ? "table-success" : ""))">
+                <td>@message.Name</td>
+                <td>@message.Email</td>
+               
+                <td>@message.Content</td>
+                <td>@message.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+               
+                <td>
+                    <button type="button" class="btn btn-@((message.IsRead ? "success" : "danger")) mark-as-read-btn">
+                        @((message.IsRead ? "Read" : "Mark as Read"))
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("salam");
+        const buttons = document.querySelectorAll(".mark-as-read-btn");
+        buttons.forEach(button => {
+            button.addEventListener("click", async function () {
+                const row = this.closest("tr");
+                const messageId = row.getAttribute("data-id");
+
+                const response = await fetch(`/Admin/ContactMessage/MarkAsRead/${messageId}`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        
+                    }
+                });
+
+                if (response.ok) {
+                    row.classList.add("table-success");
+                    this.classList.remove("btn-danger");
+                    this.classList.add("btn-success");
+                    this.textContent = "Read";
+                } else {
+                    alert("Failed to mark as read.");
+                }
+            });
+        });
+    });
+</script>

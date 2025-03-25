@@ -1,0 +1,32 @@
+﻿﻿@using Presentation.Areas.Admin.Models.TeamMember
+@model TeamMemberUpdateVM
+
+<form method="post" asp-action="update" asp-controller="teammember" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" class="form-control" placeholder="Enter full name" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+
+        <label asp-for="Position"></label>
+        <input asp-for="Position" class="form-control" placeholder="Enter position" />
+        <span asp-validation-for="Position" class="text-danger"></span>
+
+        <label asp-for="Photo"></label>
+        <input asp-for="Photo" type="file" class="form-control" />
+        <span asp-validation-for="Photo" class="text-danger"></span>
+
+        <label asp-for="LinkedinLink"></label>
+        <input asp-for="LinkedinLink" class="form-control" placeholder="Enter Linkedin Link" />
+        <span asp-validation-for="LinkedinLink" class="text-danger"></span>
+
+        <label asp-for="InstagramLink"></label>
+        <input asp-for="InstagramLink" class="form-control" placeholder="Enter Instagram Link" />
+        <span asp-validation-for="InstagramLink" class="text-danger"></span>
+
+        <label asp-for="FacebookLink"></label>
+        <input asp-for="FacebookLink" class="form-control" placeholder="Enter Facebook Link" />
+        <span asp-validation-for="FacebookLink" class="text-danger"></span>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

@@ -1,0 +1,46 @@
+﻿@using Presentation.Areas.Admin.Models.TeamMember
+@model TeamMemberIndexVM
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Team Members</h1>
+    <a class="btn btn-primary" asp-action="create" asp-controller="teammember">Create</a>
+</div>
+
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th scope="col">Full Name</th>
+            <th scope="col">Position</th>
+            <th scope="col">Photo</th>
+            <th scope="col">Linkedin</th>
+            <th scope="col">Facebook</th>
+            <th scope="col">Instagram</th>
+            <th scope="col">Created Date </th>
+            <th scope="col">Modified Date</th>
+            <th scope="col" class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var teamMember in Model.TeamMembers)
+        {
+            <tr>
+            
+                <td>@teamMember.FullName</td>
+                <td>@teamMember.Position</td>
+                <td><img src="~/uploads/@teamMember.PhotoName" alt="Photo" width ="80px" height="80px" style="border-radius:50%" /></td>
+                <td>@teamMember.LinkedinLink</td>
+                <td>@teamMember.FacebookLink</td>
+                <td>@teamMember.InstagramLink</td>
+                <td>@teamMember.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@teamMember.ModifiedAt?.ToString("dd/MM/yyyy HH:mm")</td>
+                <td class="text-center d-flex justify-content-center">
+                    <a class="btn btn-secondary mx-2" asp-action="update" asp-controller="teammember" asp-route-id="@teamMember.Id">Update</a>
+                    <form method="post" asp-action="delete" asp-controller="teammember" asp-route-id="@teamMember.Id">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
