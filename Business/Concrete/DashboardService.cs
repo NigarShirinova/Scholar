@@ -106,7 +106,7 @@ namespace Business.Services
             return true;
         }
 
-        private async Task<string> GetUserTypeAsync(string userId)
+        public async Task<string> GetUserTypeAsync(string userId)
         {
             var discriminator = await _context.Users
                 .Where(u => u.Id == userId)
@@ -130,5 +130,7 @@ namespace Business.Services
             }
             return balance;
         }
+
+       
     }
 }

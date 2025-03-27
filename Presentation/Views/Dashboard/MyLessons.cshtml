@@ -1,0 +1,42 @@
+﻿@using Business.ViewModels.TeacherDashboard
+@model LessonVM
+
+
+<div class="main-content">
+    <header class="header">
+        <h1>My Lessons</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Teacher</th>
+                <th>Lesson Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Happened?</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var lesson in Model.Lessons.OrderBy(l => l.LessonDate))
+            {
+                @if(lesson.IsTaken){
+                <tr>
+                    <td>@(lesson.Student != null ? lesson.Student.FullName : "N/A")</td>
+                    <td>@(lesson.Teacher != null ? lesson.Teacher.FullName : "N/A")</td>
+                <td>@lesson.Name</td>
+                    <td>@lesson.LessonDate.ToString("yyyy-MM-dd")</td>
+                    <td>@lesson.LessonDate.ToString("HH:mm")</td>
+                    @if(lesson.LessonDate > DateTime.Now){
+                        <td style="color:red"> No</td>
+                    }
+                    else{
+                        <td style="color: green">Yes</td>
+                    }
+            </tr>
+            }
+            }
+        </tbody>
+    </table>
+</div>

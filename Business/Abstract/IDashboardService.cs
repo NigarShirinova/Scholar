@@ -13,6 +13,7 @@ namespace Business.Abstract
         Task<DashboardIndexVM> GetDashboardDataAsync(string userId, string email);
         Task<BalanceIndexVM> GetBalanceDataAsync(string userId);
         Task<bool> AddLessonAsync(string userId, LessonCreateVM model);
+        Task<string> GetUserTypeAsync(string userId);
         Task<List<Lesson>> GetAvailableLessonsAsync();
         Task<bool> BuyLessonAsync(string userId, int lessonId);
     }

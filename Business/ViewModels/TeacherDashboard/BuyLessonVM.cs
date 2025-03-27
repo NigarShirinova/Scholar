@@ -7,8 +7,10 @@ using Common.Entities;
 
 namespace Business.ViewModels.TeacherDashboard
 {
-    public class BuyLessonVM
+    public class LessonVM
     {
         public List<Lesson> Lessons { get; set; }
+        public string UserType { get; set; }
+        public string UserId { get; set; }
     }
 }

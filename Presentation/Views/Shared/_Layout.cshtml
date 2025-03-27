@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="~/css/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Scholar</h2>
+        <ul>
+            <a asp-action="index" asp-controller="Dashboard">
+            <li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
+            <a asp-action="BuyLesson" asp-controller="Dashboard">
+            <li><i class="fa-solid fa-laptop"></i><p>Lessons</p></li> </a>
+            <a asp-action="MyLessons" asp-controller="Dashboard">
+            <li><i class="fa-solid fa-person-chalkboard"></i><p>My Lessons</p></li> </a>
+            <a asp-action="Balance" asp-controller="Dashboard">
+            <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
+            <a asp-action="index" asp-controller="Home">
+            <li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
+        </ul>
+    </nav>
+
+
+
+@RenderBody()
+
+
+</body>  
+</html>

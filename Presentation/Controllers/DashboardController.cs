@@ -52,12 +52,31 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> BuyLesson()
         {
-            var model = new BuyLessonVM
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            string userType = await _dashboardService.GetUserTypeAsync(userId);
+            var model = new LessonVM
             {
-                Lessons = await _dashboardService.GetAvailableLessonsAsync()
+                Lessons = await _dashboardService.GetAvailableLessonsAsync(),
+                UserType = userType,
+                UserId = userId
             };
             return View(model);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> MyLessons()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            string userType = await _dashboardService.GetUserTypeAsync(userId);
+            var model = new LessonVM
+            {
+                Lessons = await _dashboardService.GetAvailableLessonsAsync(),
+                UserType = userType,
+                UserId = userId
+            };
+            return View(model);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> BuyLesson(int lessonId)

@@ -1,45 +1,14 @@
 ﻿@using Business.ViewModels.TeacherDashboard
-@model BuyLessonVM
+@model LessonVM
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="~/css/buylesson.css">
+<!-- Main Content -->
+<div class="main-content">
+    <header class="header">
+        <h1>Buy Lesson</h1>
+    </header>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
-    <!-- Sidebar -->
-    <nav class="sidebar">
-        <h2>Scholar</h2>
-
-        <ul>
-            <a asp-action="index" asp-controller="Dashboard">
-                <li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
-        
-            <a asp-action="BuyLesson" asp-controller="Dashboard">
-                <li><i class="fa-solid fa-laptop"></i><p>Buy Lesson</p></li> </a>
-            <a asp-action="Balance" asp-controller="Dashboard">
-                <li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
-            <a asp-action="index" asp-controller="Home">
-                <li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
-        </ul>
-
-    </nav>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <header class="header">
-            <h1>Buy Lesson</h1>
-        </header>
-
+    @if(Model.UserType == "Student"){
         <section class="dashboard-cards">
 
             @foreach (var lesson in Model.Lessons)
@@ -47,19 +16,55 @@
                 if (lesson.IsTaken == false)
                 {
                     <div class="card">
-
-                <p>@lesson.Teacher.FullName</p>
-                <h3>@lesson.Name</h3>
+                        <p>@lesson.Teacher.FullName</p>
+                        <h3>@lesson.Name</h3>
                         <p>@lesson.LessonDate.ToString("yyyy-MM-dd") ,@lesson.LessonDate.ToString("HH:mm")</p>
-                        <form asp-action="BuyLesson" method="post">
+                        <h3>$ @lesson.Price</h3>
+                        <form asp-action="BuyLesson" method="post" onsubmit="return confirmBuy();">
                             <input type="hidden" name="lessonId" value="@lesson.Id" />
                             <button type="submit">Buy Lesson</button>
                         </form>
-            </div>}
+                    </div>
+                }
             }
-            
+
         </section>
+    }
 
+    else{
+        <div style="width: 100% ; margin-bottom: 20px" class="addbutton">
+            <a asp-controller="Dashboard" asp-action="AddLesson">
+                <button>Add New Lesson</button>
+            </a>
+        </div>
+        <section class="dashboard-cards">
 
-</body>
-</html>
+            @foreach (var lesson in Model.Lessons)
+            {
+                if (lesson.Teacher.Id == Model.UserId)
+                {
+                    <div class="card">
+                        <p>@lesson.Teacher.FullName</p>
+                        <h3>@lesson.Name</h3>
+                        <p>@lesson.LessonDate.ToString("yyyy-MM-dd") ,@lesson.LessonDate.ToString("HH:mm")</p>
+                        <h3>$ @lesson.Price</h3>
+                        @if (lesson.IsTaken)
+                        {
+                            <button>Taked</button>
+                        }
+                        else{
+                            <button>Not Taked</button>
+                        }
+                    </div>
+                }
+            }
+
+        </section>
+    }
+</div>
+
+<script>
+    function confirmBuy() {
+        return confirm("Are you sure for buyying the lesson?");
+    }
+</script>

@@ -1,35 +1,7 @@
 ﻿@using Business.ViewModels.TeacherDashboard
 @model LessonCreateVM
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dashboard</title>
-	<link rel="stylesheet" href="~/css/dashboard.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-		  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-		  crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
-	<!-- Sidebar -->
-	<nav class="sidebar">
-		<h2>Scholar</h2>
-
-			<ul>
-				<a asp-action="index" asp-controller="Dashboard">
-				<li><i class="fa-solid fa-briefcase"></i>Workspace</li>  </a>
-				
-				<a asp-action="Balance" asp-controller="Dashboard">
-				<li><i class="fa-solid fa-sack-dollar"></i><p>Balance</p></li> </a>
-				<a asp-action="index" asp-controller="Home">
-				<li><i class="fa-solid fa-house"></i><p>Go Home</p></li> </a>
-			</ul>
-			
-	</nav>
 
 
 	<!-- Main Content -->
@@ -38,28 +10,28 @@
 			AddLesson
 		</header>
 
-		<form asp-action="AddLesson" method="post" enctype="multipart/form-data">
-			<div>
-				<label>Name</label>
-				<input asp-for="Name" required />
-			</div>
-			<div>
-				<label>Price</label>
-				<input asp-for="Price" type="number" step="0.01" required />
-			</div>
-			<div>
-				<label>Lesson Date</label>
-				<input asp-for="LessonDate" type="datetime-local" required />
-			</div>
-			<div>
-				<label>Photo</label>
-				<input asp-for="Photo" type="file" />
-			</div>
-			<button type="submit">Save Lesson</button>
-		</form>
+    <form asp-action="AddLesson" method="post" enctype="multipart/form-data">
+        <div>
+            <label>Name</label>
+            <input asp-for="Name" required
+                   style="border: 1px solid #ccc; border-radius: 20px; font-size: 16px; padding: 10px; margin-bottom: 15px; width: 100%;" />
+        </div>
+        <div>
+            <label>Price</label>
+            <input asp-for="Price" type="number" step="0.01" required
+                   style="border: 1px solid #ccc; border-radius: 20px; font-size: 16px; padding: 10px; margin-bottom: 15px; width: 100%;" />
+        </div>
+        <div>
+            <label>Lesson Date</label>
+            <input asp-for="LessonDate" type="datetime-local" required
+                   style="border: 1px solid #ccc; border-radius: 20px; font-size: 16px; padding: 10px; margin-bottom: 15px; width: 100%;" />
+        </div>
+
+        <button type="submit"
+               >
+            Save Lesson
+        </button>
+    </form>
+
+
 	</div>
-</body>
-
-
-
-</html>
