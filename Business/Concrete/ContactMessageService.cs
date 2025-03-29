@@ -45,7 +45,7 @@ namespace Business.Concrete
                 Email = model.Email,
                 Name = model.Name,
                 Content = model.Content,
-                CreatedAt = DateTime.Now,
+                CreatedAt = DateTime.UtcNow,
             };
 
             await _contactMessageRepository.CreateAsync(contactMessage);

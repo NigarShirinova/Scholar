@@ -28,7 +28,8 @@
                 <td>@lesson.Name</td>
                     <td>@lesson.LessonDate.ToString("yyyy-MM-dd")</td>
                     <td>@lesson.LessonDate.ToString("HH:mm")</td>
-                    @if(lesson.LessonDate > DateTime.Now){
+                        @if (lesson.LessonDate > DateTime.UtcNow)
+                        {
                         <td style="color:red"> No</td>
                     }
                     else{

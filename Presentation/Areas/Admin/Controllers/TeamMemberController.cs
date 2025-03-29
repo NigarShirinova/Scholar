@@ -74,7 +74,7 @@ namespace Presentation.Areas.Admin.Controllers
                 LinkedinLink = model.LinkedinLink,
                 FacebookLink = model.FacebookLink,
                 InstagramLink = model.InstagramLink,
-                CreatedAt = DateTime.Now,
+                CreatedAt = DateTime.UtcNow,
             };
 
 
@@ -139,7 +139,7 @@ namespace Presentation.Areas.Admin.Controllers
             }
 
            
-            teamMember.ModifiedAt = DateTime.Now;
+            teamMember.ModifiedAt = DateTime.UtcNow;
             teamMember.FullName = model.FullName;
             teamMember.Position = model.Position;
             teamMember.LinkedinLink = model.LinkedinLink;

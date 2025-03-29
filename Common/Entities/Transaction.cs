@@ -13,7 +13,7 @@ namespace Common.Entities
         public string UserId { get; set; }
         public  decimal Amount { get; set; }
         public TransactionType TransactionType { get; set; }
-        public DateTime DateTime { get; set; } = DateTime.Now;
+        public DateTime DateTime { get; set; } = DateTime.UtcNow;
         public Guid PaymentToken { get; set; }
         public OrderStatus OrderStatus { get; set; }
     }

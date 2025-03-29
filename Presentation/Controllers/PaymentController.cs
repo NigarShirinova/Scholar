@@ -39,7 +39,7 @@ namespace Presentation.Controllers
             var transaction = new Transaction
             {
                 TransactionType = TransactionType.Income,
-                DateTime = DateTime.Now,
+                DateTime = DateTime.UtcNow,
                 UserId = user.Id,
                 PaymentToken = Guid.NewGuid(),
                 Amount = amount
@@ -112,7 +112,7 @@ namespace Presentation.Controllers
             var transaction = new Transaction
             {
                 TransactionType = TransactionType.Withdrawal,
-                DateTime = DateTime.Now,
+                DateTime = DateTime.UtcNow,
                 UserId = user.Id,
                 PaymentToken = Guid.NewGuid(),
                 Amount = amount
