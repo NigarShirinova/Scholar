@@ -34,6 +34,6 @@ COPY --from=publish /app/publish .
 RUN mkdir -p /app/wwwroot/uploads
 
 # Optional: permission (Linux üçün)
-# RUN chmod -R 777 /app/wwwroot/uploads
+ RUN chmod -R 777 /app/wwwroot/uploads
 
 ENTRYPOINT ["dotnet", "Presentation.dll"]
