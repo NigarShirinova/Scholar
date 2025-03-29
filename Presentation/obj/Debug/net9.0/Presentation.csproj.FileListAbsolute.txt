@@ -84,7 +84,6 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Presentation.props
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Presentation.props
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\refint\Presentation.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.pdb
@@ -1947,4 +1946,5 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\m73c
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\ds64tx0gqp-l5o0ocrnlv.gz
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\im4devztfv-2wi3hjrgzq.gz
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\1cayyboa5f-icxzlodxve.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\1cayyboa5f-j4a5ejrclv.gz

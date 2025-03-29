@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    overflow: visible;
+    height: 100vh;
+    background: #f8f9fc;
+}
+
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+ 
+    height: 100%;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.sidebar ul a {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar ul li {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    gap: 10px;
+}
+
+.sidebar ul li i {
+    font-size: 20px;
+}
+
+.sidebar ul li:hover {
+    background: #7a6ad8;
+    color: white;
+}
+
+
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.header {
+    background: #7a6ad8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.balance-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.balance-amount {
+    font-size: 40px;
+    font-weight: bold;
+    color: #7a6ad8;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: #7a6ad8;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #7a6ad8;
+}
+
+.transaction-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table th, .transaction-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.transaction-table th {
+    background-color: #7a6ad8;
+    color: white;
+    font-weight: bold;
+}
+
+.transaction-table tr:nth-child(even) {
+    background-color: #f4f4f9;
+}

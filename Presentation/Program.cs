@@ -20,7 +20,7 @@ builder.Services.AddControllersWithViews();
 
 // DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Local")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 // Identity
 builder.Services.AddIdentity<User, IdentityRole>(options =>
@@ -77,6 +77,13 @@ app.UseAuthorization();
 
 // Stripe Key
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe")["SecretKey"];
+
+
+using(var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    await dbContext.Database.MigrateAsync();
+};
 
 // Area routing
 app.MapControllerRoute(

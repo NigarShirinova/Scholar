@@ -238,6 +238,15 @@ td {
         grid-template-columns: 1fr;
     }
 
+    .balance-container {
+        flex-direction: column;
+        align-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .balance-container input{
+        width: 70%;
+    }
     .container {
         flex-direction: column;
         align-items: center;
@@ -346,6 +355,15 @@ button:hover {
     .availabledates table {
         width: 100%;
     }
+
+    .transaction-table {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center;
+    }
+
+        .transaction-table table {
+            width: 100%;
+        }
 
     .addbutton {
         margin-left: 0;
