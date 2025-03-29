@@ -69,7 +69,7 @@ namespace Business.Services
             {
                 Name = model.Name,
                 Price = model.Price,
-                LessonDate = model.LessonDate,
+                LessonDate = DateTime.SpecifyKind(model.LessonDate, DateTimeKind.Utc),
                 Teacher = teacher,
                 IsTaken = false
             };
