@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mMuAzWZYB9g=",
+  "dgSpecHash": "iLJjUzKDZ+4=",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -86,6 +86,8 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\mimekit\\4.10.0\\mimekit.4.10.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\restsharp\\105.0.1\\restsharp.105.0.1.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\stripe\\1.12.0\\stripe.1.12.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\stripe.net\\47.4.0\\stripe.net.47.4.0.nupkg.sha512",

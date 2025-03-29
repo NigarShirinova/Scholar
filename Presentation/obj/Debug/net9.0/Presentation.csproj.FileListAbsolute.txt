@@ -1948,3 +1948,5 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\im4d
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\1cayyboa5f-j4a5ejrclv.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Npgsql.dll
+C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
