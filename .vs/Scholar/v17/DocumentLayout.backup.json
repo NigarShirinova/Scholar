@@ -3,28 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Scholar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|c:\\users\\asus\\source\\repos\\scholar\\common\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|solutionrelative:common\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\scholar\\business\\concrete\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|solutionrelative:business\\concrete\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\scholar\\business\\concrete\\contactmessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|solutionrelative:business\\concrete\\contactmessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\addlesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\addlesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\buylesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\buylesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\scholar\\data\\migrations\\20250329133156_postgresmigrationsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|solutionrelative:data\\migrations\\20250329133156_postgresmigrationsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\balance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\balance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\areas\\admin\\controllers\\teammembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\controllers\\teammembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|c:\\users\\asus\\source\\repos\\scholar\\common\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|solutionrelative:common\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\areas\\admin\\controllers\\teammembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\controllers\\teammembercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|c:\\users\\asus\\source\\repos\\scholar\\common\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|solutionrelative:common\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\scholar\\business\\concrete\\contactmessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|solutionrelative:business\\concrete\\contactmessageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\scholar\\data\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\buylesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\buylesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,20 +79,12 @@
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\balance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\balance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\scholar\\data\\migrations\\20250329133156_postgresmigrationsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|solutionrelative:data\\migrations\\20250329133156_postgresmigrationsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,71 +99,166 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\Transaction.cs",
-              "RelativeDocumentMoniker": "Common\\Entities\\Transaction.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\Transaction.cs",
-              "RelativeToolTip": "Common\\Entities\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:33:16.138Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T15:49:33.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\DashboardService.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\DashboardService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\DashboardService.cs",
+              "RelativeToolTip": "Business\\Concrete\\DashboardService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwEEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:47:18.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwCwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:47:09.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddLesson.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\AddLesson.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\AddLesson.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\AddLesson.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\AddLesson.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T14:47:05.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MyLessons.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T14:33:02.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Common\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "Common\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:32:44.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamMemberController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
+              "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAjwEwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T15:32:39.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Balance.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Balance.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\Balance.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Balance.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\Balance.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAjwC8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T11:43:54.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250329133156_postgresmigrationsadded.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
+              "RelativeToolTip": "Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T13:31:56.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyLesson.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T11:44:08.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "Common\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\Transaction.cs",
+              "RelativeToolTip": "Common\\Entities\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:33:16.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ContactMessageService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\ContactMessageService.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\ContactMessageService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\ContactMessageService.cs",
+              "RelativeToolTip": "Business\\Concrete\\ContactMessageService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAWwC8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:32:49.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\PaymentController.cs",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "Presentation\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAjwHIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAewCkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T14:29:52.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyLessons.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T14:33:02.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactMessageService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\ContactMessageService.cs",
-              "RelativeDocumentMoniker": "Business\\Concrete\\ContactMessageService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\ContactMessageService.cs",
-              "RelativeToolTip": "Business\\Concrete\\ContactMessageService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAC8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:32:49.969Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Common\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "Common\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:32:44.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -159,20 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BuyLesson.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T11:44:08.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "main.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\main.css",
               "RelativeDocumentMoniker": "Presentation\\wwwroot\\css\\main.css",
@@ -184,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\Contexts\\AppDbContext.cs",
@@ -192,12 +290,11 @@
               "RelativeToolTip": "Data\\Contexts\\AppDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T19:32:17.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T19:32:17.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Dockerfile",
               "RelativeDocumentMoniker": "Presentation\\Dockerfile",
@@ -205,12 +302,11 @@
               "RelativeToolTip": "Presentation\\Dockerfile",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-27T16:27:43.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T16:27:43.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "Presentation\\appsettings.json",
@@ -222,20 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TeamMemberController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
-              "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAjwEwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T15:32:39.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\HomeController.cs",
@@ -248,19 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20250329133156_postgresmigrationsadded.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
-              "RelativeToolTip": "Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:31:56.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "dashboard.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
               "RelativeDocumentMoniker": "Presentation\\wwwroot\\css\\dashboard.css",
@@ -272,19 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Balance.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Balance.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\Balance.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Balance.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Dashboard\\Balance.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T11:43:54.687Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\AccountController.cs",

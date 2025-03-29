@@ -18,36 +18,47 @@
 
 		<!-- Dashboard Cards -->
 		<section class="dashboard-cards">
-			@if (Model.UserType == "Teacher")
-			{
-				<div class="card">
-					<h3>Selled Lessons</h3>
-				<p>@Model.Lessons.Where(l => l.IsTaken == true).Count()</p>
-				</div>
-				<div class="card">
-					<h3>Your Income</h3>
-				<p>$ @Model.Lessons.Where(l => l.IsTaken == true).Sum(l => l.Price)</p>
+		@if (Model.UserType == "Teacher")
+		{
+			<div class="card">
+				<h3>Selled Lessons</h3>
+				<p>
+					@Model.Lessons.Where(l => l.IsTaken == true && l.Teacher.Email == Model.Email).Count()
+				</p>
+			</div>
 
-				</div>
-				<div class="card">
-					<h3>Lesson Count</h3>
-					<p>@Model.Lessons.Count()</p>
-				</div>
-			}
+			<div class="card">
+				<h3>Your Income</h3>
+				<p>
+					$ @Model.Lessons.Where(l => l.IsTaken == true && l.Teacher.Email == Model.Email).Sum(l => l.Price)
+				</p>
+			</div>
 
-			else
-			{
-				<div class="card">
-					<h3>All Lessons</h3>
-					<p>@Model.Lessons.Count()</p>
-				</div>
-				<div class="card">
-					<h3>Your Expense</h3>
-				<p>$ @Model.Lessons.Sum(l => l.Price)</p>
-				</div>
-				
-			}
+			<div class="card">
+				<h3>Lesson Count</h3>
+				<p>
+					@Model.Lessons.Where(l => l.Teacher.Email == Model.Email).Count()
+				</p>
+			</div>
+		}
 
+
+		else
+		{
+			<div class="card">
+				<h3>All Lessons</h3>
+				<p>
+					@Model.Lessons.Where(l => l.Student != null && l.Student.Email == Model.Email).Count()
+				</p>
+			</div>
+
+			<div class="card">
+				<h3>Your Expense</h3>
+				<p>
+					$ @Model.Lessons.Where(l => l.Student != null && l.Student.Email == Model.Email).Sum(l => l.Price)
+				</p>
+			</div>
+		}
 
 		</section>
 

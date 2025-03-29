@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Scholar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|c:\\users\\asus\\source\\repos\\scholar\\business\\concrete\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6677E3D-D8E5-49F4-B2B4-1245D878E6AB}|Business\\Business.csproj|solutionrelative:business\\concrete\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -95,19 +99,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwDkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T15:49:33.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DashboardService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\DashboardService.cs",
               "RelativeDocumentMoniker": "Business\\Concrete\\DashboardService.cs",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\DashboardService.cs",
               "RelativeToolTip": "Business\\Concrete\\DashboardService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAuwEcAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwEEAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T14:47:18.949Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\DashboardController.cs",
@@ -115,12 +132,11 @@
               "RelativeToolTip": "Presentation\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAqwCwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:47:09.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:47:09.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddLesson.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\AddLesson.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\AddLesson.cshtml",
@@ -128,12 +144,11 @@
               "RelativeToolTip": "Presentation\\Views\\Dashboard\\AddLesson.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T14:47:05.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:47:05.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MyLessons.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
@@ -141,12 +156,11 @@
               "RelativeToolTip": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAB4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T14:33:02.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:33:02.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "Common\\Entities\\BaseEntity.cs",
@@ -154,12 +168,11 @@
               "RelativeToolTip": "Common\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:32:44.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:32:44.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TeamMemberController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
               "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\TeamMemberController.cs",
@@ -172,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Balance.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\Balance.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\Balance.cshtml",
@@ -180,12 +193,11 @@
               "RelativeToolTip": "Presentation\\Views\\Dashboard\\Balance.cshtml",
               "ViewState": "AgIAABwAAAAAAAAAAAAjwC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T11:43:54.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T11:43:54.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "20250329133156_postgresmigrationsadded.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
@@ -193,12 +205,11 @@
               "RelativeToolTip": "Data\\Migrations\\20250329133156_postgresmigrationsadded.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAAEIAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:31:56.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T13:31:56.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BuyLesson.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
@@ -206,12 +217,11 @@
               "RelativeToolTip": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
               "ViewState": "AgIAACMAAAAAAAAAAAAAACMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-29T11:44:08.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T11:44:08.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Entities\\Transaction.cs",
               "RelativeDocumentMoniker": "Common\\Entities\\Transaction.cs",
@@ -219,12 +229,11 @@
               "RelativeToolTip": "Common\\Entities\\Transaction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:33:16.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:33:16.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ContactMessageService.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Business\\Concrete\\ContactMessageService.cs",
               "RelativeDocumentMoniker": "Business\\Concrete\\ContactMessageService.cs",
@@ -232,12 +241,11 @@
               "RelativeToolTip": "Business\\Concrete\\ContactMessageService.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAWwC8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:32:49.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:32:49.969Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\PaymentController.cs",
@@ -250,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -262,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "main.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\main.css",
               "RelativeDocumentMoniker": "Presentation\\wwwroot\\css\\main.css",
@@ -274,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\Contexts\\AppDbContext.cs",
@@ -286,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Dockerfile",
               "RelativeDocumentMoniker": "Presentation\\Dockerfile",
@@ -298,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "Presentation\\appsettings.json",
@@ -310,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Presentation\\Controllers\\HomeController.cs",
@@ -318,11 +326,12 @@
               "RelativeToolTip": "Presentation\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAawC8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:29:52.735Z"
+              "WhenOpened": "2025-03-29T14:29:52.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "dashboard.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\css\\dashboard.css",
               "RelativeDocumentMoniker": "Presentation\\wwwroot\\css\\dashboard.css",
@@ -334,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\AccountController.cs",
@@ -342,7 +351,8 @@
               "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\AccountController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAjwEYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T15:33:46.297Z"
+              "WhenOpened": "2025-03-27T15:33:46.297Z",
+              "EditorCaption": ""
             }
           ]
         }
