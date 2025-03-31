@@ -65,6 +65,8 @@ namespace Business.Services
             var teacher = await _context.Users.OfType<UserTeacher>().FirstOrDefaultAsync(u => u.Id == userId);
             if (teacher == null) return false;
 
+            if(model.LessonDate <= DateTime.UtcNow) return false;
+
             var lesson = new Lesson
             {
                 Name = model.Name,
@@ -86,6 +88,18 @@ namespace Business.Services
                 .Include(l => l.Student)
                 .ToListAsync();
         }
+
+        public async Task<List<Lesson>> GetUsersLessonsAsync(string userId)
+        {
+            return await _context.Lessons
+                .Include(l => l.Teacher)
+                .Include(l => l.Student)
+                .Where(l => l.Teacher.Id == userId || l.Student.Id == userId)
+                .ToListAsync();
+        }
+
+
+
 
         public async Task<bool> BuyLessonAsync(string userId, int lessonId)
         {

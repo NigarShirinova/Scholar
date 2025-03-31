@@ -44,7 +44,7 @@ namespace Presentation.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (!await _dashboardService.AddLessonAsync(userId, model))
             {
-                return Forbid();
+                return Content("<script>alert('You did something wrong'); window.location.href='/Dashboard/AddLesson';</script>", "text/html");
             }
             return RedirectToAction("Index");
         }
@@ -70,7 +70,7 @@ namespace Presentation.Controllers
             string userType = await _dashboardService.GetUserTypeAsync(userId);
             var model = new LessonVM
             {
-                Lessons = await _dashboardService.GetAvailableLessonsAsync(),
+                Lessons = await _dashboardService.GetUsersLessonsAsync(userId),
                 UserType = userType,
                 UserId = userId
             };

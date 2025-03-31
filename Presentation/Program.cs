@@ -22,6 +22,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 
+
+
 // Identity
 builder.Services.AddIdentity<User, IdentityRole>(options =>
 {

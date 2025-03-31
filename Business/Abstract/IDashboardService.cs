@@ -16,6 +16,7 @@ namespace Business.Abstract
         Task<string> GetUserTypeAsync(string userId);
         Task<List<Lesson>> GetAvailableLessonsAsync();
         Task<bool> BuyLessonAsync(string userId, int lessonId);
+        Task<List<Lesson>> GetUsersLessonsAsync(string userId);
     }
 
 }
