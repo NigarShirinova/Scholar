@@ -47,12 +47,14 @@ builder.Services.AddScoped<IAccountService, Business.Concrete.AccountService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IDashboardService, DashboardService>();
 builder.Services.AddScoped<Business.Abstract.IContactMessageService, Business.Concrete.ContactMessageService>();
+builder.Services.AddScoped<ICommentService,CommentService>();
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
 // Repositories
 builder.Services.AddScoped<IDashboardRepository, DashboardRepository>();
 builder.Services.AddScoped<ITeamMemberRepository, TeamMemberRepository>();
 builder.Services.AddScoped<IContactMessageRepository, ContactMessageRepository>();
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<Data.UnitOfWork.IUnitOfWork, Data.UnitOfWork.UnitOfWork>();
 
 // Stripe config

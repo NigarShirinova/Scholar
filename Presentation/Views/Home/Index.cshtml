@@ -342,22 +342,18 @@
 			<div class="row">
 				<div class="col-lg-7">
 					<div class="owl-carousel owl-testimonials">
-						<div class="item">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
-							<div class="author">
-								
-							
-								<h4>Nigar Shirinova</h4>
+						@foreach (var comment in Model.Comments)
+						{
+							<div class="item">
+								<p>@comment.Content</p>
+								<div class="author">
+
+
+									<h4>@comment.FullName</h4>
+								</div>
 							</div>
-						</div>
-						<div class="item">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta unde quae asperiores labore porro cumque deleniti fugiat.</p>
-							<div class="author">
-								
-								
-								<h4>Nigar Shirinova</h4>
-							</div>
-						</div>
+						}
+						
 
 					</div>
 				</div>
@@ -366,8 +362,23 @@
 						<h6>Comments</h6>
 						<h2>What they think about us?</h2>
 						<fieldset>
-							<button type="submit" id="form-submit" class="orange-button" style=" border: none; border-radius: 50px; color: white; font-size: 16px; font-weight:600; background-color: #7B6ADA; padding: 15px;">Add Your Comment</button>
+							<button type="button" id="form-submit" class="orange-button" style="border: none; border-radius: 50px; color: white; font-size: 16px; font-weight:600; background-color: #7B6ADA; padding: 15px;" onclick="showForm()">Add Your Comment</button>
 						</fieldset>
+						<fieldset>
+							<button type="button" id="hide-form" class="orange-button" style=" display: none; width:60px; border-radius: 30px; padding: 10px; background-color: #7B6ADA; color: white; border: none" onclick="hideForm()">Hide</button>
+						</fieldset>
+						<!-- Hidden form that will show up when the button is clicked -->
+						<div id="comment-form" style="display: none; margin-top: 10px;">
+							<style>
+								
+							</style>
+							<form style=" display: flex ; gap:5px" asp-action="AddComment" asp-controller="Home">
+								<input asp-for="Comment.FullName" id="fullname" name="fullname" placeholder="Name" style="display:inline; border-radius: 30px; padding: 10px; border: #EFEFEF; width: 80px"></input><br><br>
+								<textarea asp-for="Comment.Content" id="comment" name="content" rows="1" placeholder="Comment" cols="50" style="display: inline; border-radius: 30px; padding: 10px; border: #EFEFEF; resize: none; "></textarea><br><br>
+								<button type="submit" style="border-radius: 50px; padding: 10px; background-color: #7B6ADA; color: white; border: none; margin-top: 5px !important; margin-bottom: 5px !important;">Submit</button>
+							</form>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -442,6 +453,27 @@
 		</div>
 	</footer>
 	<!-- footer end -->
+
+	<script>
+		
+		function showForm() {
+			var form = document.getElementById("comment-form");
+			var hide = document.getElementById("hide-form");
+			var add = document.getElementById("form-submit")
+			form.style.display = "block"; 
+			hide.style.display = "block";
+			add.style.display = "none";
+		}
+
+			function hideForm() {
+			var form = document.getElementById("comment-form");
+			var hide = document.getElementById("hide-form");
+			var add = document.getElementById("form-submit")
+			form.style.display = "none"; 
+			hide.style.display = "none"; 
+			add.style.display = "block";
+		}
+	</script>
 
 	<script src="~/vendor/jquery/jquery.min.js"></script>
 	<script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
