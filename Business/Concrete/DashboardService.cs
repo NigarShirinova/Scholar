@@ -31,11 +31,11 @@ namespace Business.Services
                 .OrderByDescending(t => t.DateTime)
                 .ToListAsync();
 
-            decimal balance = CalculateBalance(transactions);
+            var balance = await GetBalanceDataAsync(userId);
 
             return new DashboardIndexVM
             {
-                Balance = balance,
+                Balance = balance.Balance,
                 UserType = userType,
                 Lessons = lessons,
                 Email = email
@@ -46,7 +46,7 @@ namespace Business.Services
         {
             var userType = await GetUserTypeAsync(userId);
             var transactions = await _context.Transactions
-                .Where(t => t.UserId == userId)
+                .Where(t => t.UserId == userId && t.OrderStatus == Common.Constants.OrderStatus.Success)
                 .OrderByDescending(t => t.DateTime)
                 .ToListAsync();
 
@@ -140,7 +140,7 @@ namespace Business.Services
             decimal balance = 0;
             foreach (var transaction in transactions)
             {
-                balance += transaction.TransactionType == Common.Constants.TransactionType.Income ? transaction.Amount : -transaction.Amount;
+                balance += transaction.TransactionType == Common.Constants.TransactionType.Income  ? transaction.Amount : -transaction.Amount;
             }
             return balance;
         }

@@ -42,7 +42,8 @@ namespace Presentation.Controllers
                 DateTime = DateTime.UtcNow,
                 UserId = user.Id,
                 PaymentToken = Guid.NewGuid(),
-                Amount = amount
+                Amount = amount,
+                OrderStatus = OrderStatus.Pending,
             };
             user.Balance = user.Balance + transaction.Amount;
             _context.Transactions.Add(transaction);
@@ -59,29 +60,30 @@ namespace Presentation.Controllers
                 SuccessUrl = successUrl,
                 CancelUrl = cancelUrl,
                 LineItems = new List<SessionLineItemOptions>
+        {
+            new SessionLineItemOptions
+            {
+                PriceData = new SessionLineItemPriceDataOptions
                 {
-                    new SessionLineItemOptions
+                    Currency = "usd",
+                    UnitAmount = (long)(amount * 100),
+                    ProductData = new SessionLineItemPriceDataProductDataOptions
                     {
-                        PriceData = new SessionLineItemPriceDataOptions
-                        {
-                            Currency = "usd",
-                            UnitAmount = (long)(amount * 100),
-                            ProductData = new SessionLineItemPriceDataProductDataOptions
-                            {
-                                Name = "Balance Top-up"
-                            }
-                        },
-                        Quantity = 1
+                        Name = "Balance Top-up"
                     }
-                }
+                },
+                Quantity = 1
+            }
+        }
             };
+
 
             try
             {
                 var service = new SessionService();
                 Session session = await service.CreateAsync(options);
-               
-                
+
+
                 return Json(new { id = session.Id});
             }
             catch (StripeException e)
@@ -141,18 +143,27 @@ namespace Presentation.Controllers
         public async Task<IActionResult> Success(Guid token)
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null) return Unauthorized();
+            if (user == null) return Unauthorized(new { error = "User not found." });
 
-            var transaction = await _context.Transactions.FirstOrDefaultAsync(t =>
-                t.PaymentToken == token &&
-                t.TransactionType == TransactionType.Income &&
-                t.UserId == user.Id
-            );
+      
+            var transaction = await _context.Transactions
+                .FirstOrDefaultAsync(t => t.PaymentToken == token &&
+                                          t.TransactionType == TransactionType.Income &&
+                                          t.UserId == user.Id);
 
-            if (transaction == null) return NotFound();
+            if (transaction == null) return NotFound(new { error = "Transaction not found." });
+
+    
+            if (transaction.OrderStatus == OrderStatus.Success)
+            {
+                return Ok(new { message = "Transaction already processed." });
+            }
 
             transaction.OrderStatus = OrderStatus.Success;
             _context.Transactions.Update(transaction);
+
+            user.Balance += transaction.Amount;
+
             await _context.SaveChangesAsync();
 
             return View();
@@ -161,30 +172,31 @@ namespace Presentation.Controllers
         public async Task<IActionResult> Cancel(Guid token)
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null) return Unauthorized();
+            if (user == null) return Unauthorized(new { error = "User not found." });
 
-            var transaction = await _context.Transactions.FirstOrDefaultAsync(t =>
-                t.PaymentToken == token &&
-                t.TransactionType == TransactionType.Income &&
-                t.UserId == user.Id
-            );
+            var transaction = await _context.Transactions
+                .FirstOrDefaultAsync(t => t.PaymentToken == token &&
+                                          t.TransactionType == TransactionType.Income &&
+                                          t.UserId == user.Id);
 
-            if (transaction != null)
+            if (transaction == null) return NotFound(new { error = "Transaction not found." });
+
+            if (transaction.OrderStatus == OrderStatus.Failure || transaction.OrderStatus == OrderStatus.Success)
             {
-                transaction.OrderStatus = OrderStatus.Failure;
-                _context.Transactions.Update(transaction);
-
-                var userAccount = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
-                if (userAccount != null)
-                {
-                    userAccount.Balance -= transaction.Amount;
-                    _context.Users.Update(userAccount);
-                }
-
-                await _context.SaveChangesAsync();
+                return Ok(new { message = "Transaction already processed." });
             }
+            transaction.OrderStatus = OrderStatus.Failure;
+            _context.Transactions.Update(transaction);
+            var userAccount = await _context.Users.FirstOrDefaultAsync(u => u.Id == user.Id);
+            if (userAccount != null)
+            {
+                userAccount.Balance -= transaction.Amount;
+                _context.Users.Update(userAccount);
+            }
+            await _context.SaveChangesAsync();
 
             return View();
         }
+
     }
 }
