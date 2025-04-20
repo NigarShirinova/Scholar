@@ -24,12 +24,12 @@ namespace Business.Concrete
         }
         public async Task<bool> AddCommentAsync(CommentCreateVM commentCreateVM)
         {
-           
-           var comment = new Comment
+
+            var comment = new Comment
             {
                 FullName = commentCreateVM.FullName,
                 Content = commentCreateVM.Content,
-                CreatedAt = DateTime.UtcNow 
+                CreatedAt = DateTime.UtcNow
             };
 
           

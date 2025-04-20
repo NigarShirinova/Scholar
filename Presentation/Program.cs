@@ -11,6 +11,7 @@ using Data.Repositories.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Presentation.Hubs;
 using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -63,6 +64,9 @@ builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Str
 // Session
 builder.Services.AddSession();
 
+builder.Services.AddSignalR();
+
+
 var app = builder.Build();
 
 // Use middlewares
@@ -83,7 +87,14 @@ app.UseAuthorization();
 StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe")["SecretKey"];
 
 
-using(var scope = app.Services.CreateScope())
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<CallHub>("/callhub");
+});
+
+
+
+using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     await dbContext.Database.MigrateAsync();

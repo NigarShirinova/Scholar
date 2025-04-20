@@ -1,0 +1,25 @@
+﻿@{
+  
+    var remoteUserId = ViewBag.RemoteUserId;
+}
+
+<div class="main-content">
+    <header class="header">
+        <h1>Video Call</h1>
+    </header>
+
+
+    <video id="localVideo" autoplay muted style="width: 50%; height: 70%; border: 15px solid #7a6ad8; border-radius: 50px; margin: 20px"></video>
+    <video id="remoteVideo" autoplay style="width: 50%; height: 70%; border: 15px solid #7a6ad8; border-radius: 50px; margin: 20px;"></video>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
+
+<script>
+    const url = new URL(window.location);
+    url.searchParams.set("with", "@remoteUserId");
+    window.history.replaceState(null, null, url);
+</script>
+
+<script src="~/js/videocall.js"></script>

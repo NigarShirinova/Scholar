@@ -344,6 +344,7 @@
 					<div class="owl-carousel owl-testimonials">
 						@foreach (var comment in Model.Comments)
 						{
+							if(comment.Show){
 							<div class="item">
 								<p>@comment.Content</p>
 								<div class="author">
@@ -352,6 +353,7 @@
 									<h4>@comment.FullName</h4>
 								</div>
 							</div>
+							}
 						}
 						
 

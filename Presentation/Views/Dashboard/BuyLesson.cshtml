@@ -41,7 +41,7 @@
 
             @foreach (var lesson in Model.Lessons)
             {
-                if (lesson.Teacher.Id == Model.UserId)
+                if (lesson.Teacher.Id == Model.UserId && lesson.LessonDate >= DateTime.UtcNow)
                 {
                     <div class="card">
                         <p>@lesson.Teacher.FullName</p>

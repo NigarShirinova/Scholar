@@ -7465,6 +7465,10 @@
       "PackagePath": "staticwebassets\\js\\owl-carousel.js"
     },
     {
+      "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\videocall.js",
+      "PackagePath": "staticwebassets\\js\\videocall.js"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

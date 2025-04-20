@@ -44,6 +44,9 @@ namespace Data.Migrations
                     b.Property<DateTime?>("ModifiedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<bool>("Show")
+                        .HasColumnType("boolean");
+
                     b.HasKey("Id");
 
                     b.ToTable("Comments");

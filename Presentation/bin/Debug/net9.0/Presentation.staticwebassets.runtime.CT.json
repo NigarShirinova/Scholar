@@ -28721,6 +28721,14 @@
             },
             "Patterns": null
           },
+          "videocall.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "js/videocall.js"
+            },
+            "Patterns": null
+          },
           "chart.js.gz": {
             "Children": null,
             "Asset": {
@@ -28758,6 +28766,14 @@
             "Asset": {
               "ContentRootIndex": 1,
               "SubPath": "9yp4r17vd0-s0urs9j7h8.gz"
+            },
+            "Patterns": null
+          },
+          "videocall.js.gz": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 1,
+              "SubPath": "no7l6iqunc-e9k12xn9t1.gz"
             },
             "Patterns": null
           }

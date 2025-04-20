@@ -10,5 +10,6 @@ namespace Common.Entities
     {
         public string FullName { get; set; }
         public string Content { get; set; }
+        public bool Show { get; set; } = false;
     }
 }

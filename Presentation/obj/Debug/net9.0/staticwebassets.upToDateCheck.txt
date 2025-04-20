@@ -1265,6 +1265,7 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\admin\assets\vendor\font
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\admin\assets\vendor\fontawesome-free\svgs\regular\file-code.svg
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\admin\assets\vendor\fontawesome-free\svgs\solid\fire-alt.svg
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\js\videocall.js
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\css\balance.css
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\css\main.css
 C:\Users\ASUS\source\repos\Scholar\Presentation\wwwroot\admin\assets\vendor\fontawesome-free\svgs\regular\angry.svg
@@ -3637,6 +3638,7 @@ wwwroot\js\counter.js
 wwwroot\js\custom.js
 wwwroot\js\isotope.min.js
 wwwroot\js\owl-carousel.js
+wwwroot\js\videocall.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

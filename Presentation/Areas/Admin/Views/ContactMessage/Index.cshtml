@@ -25,7 +25,7 @@
                 <td>@message.Email</td>
                
                 <td>@message.Content</td>
-                <td>@message.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@message.CreatedAt.AddHours(4).ToString("dd/MM/yyyy HH:mm")</td>
                
                 <td>
                     <button type="button" class="btn btn-@((message.IsRead ? "success" : "danger")) mark-as-read-btn">

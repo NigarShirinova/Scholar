@@ -1,0 +1,48 @@
+﻿@using Presentation.Areas.Admin.Models.Comment
+@model CommentIndexVM
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800"> Comments</h1>
+</div>
+
+<table class="table table-light">
+    <thead>
+        <tr>
+            <th scope="col">Full Name</th>
+            <th scope="col">Comment</th>
+            <th scope="col">Created Date </th>
+           
+            <th scope="col" class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var comment in Model.Comments)
+        {
+            <tr>
+
+                <td>@comment.FullName</td>
+
+                <td>@comment.Content</td>
+
+
+                <td>@comment.CreatedAt.AddHours(4).ToString("dd/MM/yyyy HH:mm")</td>
+
+                <td class="text-center d-flex justify-content-center gap-2">
+                    <a asp-action="Show" asp-controller="Comment" asp-route-id="@comment.Id"
+                       class="btn btn-sm @(comment.Show ? "btn-success" : "btn-outline-success")">
+                        Show
+                    </a>
+
+                    <a asp-action="Hide" asp-controller="Comment" asp-route-id="@comment.Id"
+                       class="btn btn-sm @(!comment.Show ? "btn-danger" : "btn-outline-danger")">
+                        Hide
+                    </a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
