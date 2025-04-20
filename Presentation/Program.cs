@@ -11,7 +11,7 @@ using Data.Repositories.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using Presentation.Hubs;
+
 using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);

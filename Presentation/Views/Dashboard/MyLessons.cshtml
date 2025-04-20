@@ -32,18 +32,19 @@
                     <td>@lesson.LessonDate.ToString("HH:mm")</td>
 
 
-                        <td>
-                            <a href="@Url.Action("Join", "VideoCall", new { lessonId = lesson.Id })">
-                                Join To Video Call
-                            </a>
-                        </td>
-                        @if (lesson.LessonDate > DateTime.UtcNow)
-                        {
-                        <td style="color:red"> No</td>
-                    }
-                    else{
-                        <td style="color: green">Yes</td>
-                    }
+                        @if (DateTime.UtcNow.AddHours(4) >= lesson.LessonDate && DateTime.UtcNow.AddHours(4) <= lesson.LessonDate.AddHours(2)){
+                            <td>
+                                <a href="@Url.Action("Join", "VideoCall", new { lessonId = lesson.Id })">
+                                    Join To Video Call
+                                </a>
+                            </td>
+                        }
+                        else{
+                            <td>Finished</td>
+                        }
+
+                       
+                       
             </tr>
             }
             }

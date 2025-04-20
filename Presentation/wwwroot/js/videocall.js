@@ -5,6 +5,7 @@ const remoteVideo = document.getElementById("remoteVideo");
 let localStream;
 let peerConnection;
 let remoteUserId;
+let lessonId;
 
 const config = {
     iceServers: [
@@ -57,5 +58,8 @@ async function startCall() {
 connection.start().then(() => {
     const urlParams = new URLSearchParams(window.location.search);
     remoteUserId = urlParams.get("with");
+    lessonId = urlParams.get("lesson");
+
+    connection.invoke("JoinLessonGroup", lessonId); // ✅ Zəng otağına qoşul
     if (remoteUserId) startCall();
 });
