@@ -32,6 +32,10 @@ connection.on("ReceiveCandidate", async (fromUserId, candidate) => {
     }
 });
 
+connection.on("StartCall", () => {
+    startCall(); 
+});
+
 function createPeerConnection() {
     const pc = new RTCPeerConnection(config);
     pc.onicecandidate = (event) => {
@@ -60,6 +64,5 @@ connection.start().then(() => {
     remoteUserId = urlParams.get("with");
     lessonId = urlParams.get("lesson");
 
-    connection.invoke("JoinLessonGroup", lessonId); // ✅ Zəng otağına qoşul
-    if (remoteUserId) startCall();
+    connection.invoke("JoinLessonGroup", lessonId);
 });

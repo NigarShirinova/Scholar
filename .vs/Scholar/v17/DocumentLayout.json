@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Scholar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\wwwroot\\js\\videocall.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\js\\videocall.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\hubs\\callhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\hubs\\callhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\wwwroot\\js\\videocall.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\js\\videocall.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|c:\\users\\asus\\source\\repos\\scholar\\common\\common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0D98EE45-69DB-4B23-8322-B8D203136975}|Common\\Common.csproj|solutionrelative:common\\common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\hubs\\callhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\hubs\\callhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\controllers\\videocallcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,33 +74,19 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BuyLesson.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T18:04:08.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Common",
+              "DocumentIndex": 7,
+              "Title": "Common.csproj",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Common.csproj",
               "RelativeDocumentMoniker": "Common\\Common.csproj",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Common\\Common.csproj",
               "RelativeToolTip": "Common\\Common.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-20T17:56:06.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T17:56:06.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\VideoCall\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\VideoCall\\Index.cshtml",
@@ -108,38 +94,37 @@
               "RelativeToolTip": "Presentation\\Views\\VideoCall\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T17:14:53.848Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T17:14:53.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MyLessons.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
               "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
               "RelativeToolTip": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-20T17:09:02.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "videocall.js",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\videocall.js",
               "RelativeDocumentMoniker": "Presentation\\wwwroot\\js\\videocall.js",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\wwwroot\\js\\videocall.js",
               "RelativeToolTip": "Presentation\\wwwroot\\js\\videocall.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-20T17:02:54.956Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CommentController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Areas\\Admin\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "Presentation\\Areas\\Admin\\Controllers\\CommentController.cs",
@@ -147,8 +132,7 @@
               "RelativeToolTip": "Presentation\\Areas\\Admin\\Controllers\\CommentController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAmwDYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T15:04:47.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T15:04:47.098Z"
             },
             {
               "$type": "Document",
@@ -161,6 +145,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T17:05:28.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CallHub.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Hubs\\CallHub.cs",
+              "RelativeDocumentMoniker": "Presentation\\Hubs\\CallHub.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Hubs\\CallHub.cs",
+              "RelativeToolTip": "Presentation\\Hubs\\CallHub.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:58:28.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BuyLesson.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T18:04:08.791Z"
             },
             {
               "$type": "Document",
@@ -188,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
@@ -196,21 +205,7 @@
               "RelativeToolTip": "Presentation\\Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T16:59:15.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CallHub.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Hubs\\CallHub.cs",
-              "RelativeDocumentMoniker": "Presentation\\Hubs\\CallHub.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Hubs\\CallHub.cs",
-              "RelativeToolTip": "Presentation\\Hubs\\CallHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T16:58:28.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T16:59:15.607Z"
             },
             {
               "$type": "Document",

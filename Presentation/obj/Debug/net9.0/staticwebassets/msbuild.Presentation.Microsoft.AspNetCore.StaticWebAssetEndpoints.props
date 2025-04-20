@@ -22392,17 +22392,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s0urs9j7h8"},{"Name":"integrity","Value":"sha256-RN8Ln2oIxjjCzlRJicyPww6Q/SvahGUoDQzw8tIUFz4="},{"Name":"label","Value":"_content/Presentation/js/owl-carousel.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"93438"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RN8Ln2oIxjjCzlRJicyPww6Q/SvahGUoDQzw8tIUFz4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 04 Feb 2025 12:13:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Presentation/js/videocall.2zrthtgjm0.js">
+    <StaticWebAssetEndpoint Include="_content/Presentation/js/videocall.88dt0sth1s.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\videocall.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2zrthtgjm0"},{"Name":"integrity","Value":"sha256-3jfjRJudZctl3YfQGj/wXG/DS2Nzxaysh/\u002B7x7SnFkY="},{"Name":"label","Value":"_content/Presentation/js/videocall.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2370"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223jfjRJudZctl3YfQGj/wXG/DS2Nzxaysh/\u002B7x7SnFkY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 17:55:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"88dt0sth1s"},{"Name":"integrity","Value":"sha256-OOhWk4M9qRRjFziZUZCP5PZ8t3G96ks1e7rzijzbMQg="},{"Name":"label","Value":"_content/Presentation/js/videocall.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2366"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OOhWk4M9qRRjFziZUZCP5PZ8t3G96ks1e7rzijzbMQg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 18:17:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Presentation/js/videocall.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\videocall.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3jfjRJudZctl3YfQGj/wXG/DS2Nzxaysh/\u002B7x7SnFkY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2370"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00223jfjRJudZctl3YfQGj/wXG/DS2Nzxaysh/\u002B7x7SnFkY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 17:55:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OOhWk4M9qRRjFziZUZCP5PZ8t3G96ks1e7rzijzbMQg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2366"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022OOhWk4M9qRRjFziZUZCP5PZ8t3G96ks1e7rzijzbMQg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Apr 2025 18:17:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Presentation/lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

@@ -33600,8 +33600,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2zrthtgjm0</Fingerprint>
-      <Integrity>3jfjRJudZctl3YfQGj/wXG/DS2Nzxaysh/+7x7SnFkY=</Integrity>
+      <Fingerprint>88dt0sth1s</Fingerprint>
+      <Integrity>OOhWk4M9qRRjFziZUZCP5PZ8t3G96ks1e7rzijzbMQg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\videocall.js'))</OriginalItemSpec>
