@@ -13,6 +13,42 @@
     <video id="remoteVideo" autoplay style="width: 46%; height: 70%; border: 15px solid #7a6ad8; border-radius: 50px; margin: 20px;"></video>
 </div>
 
+
+<style>
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .video-container video {
+        width: 45%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 10px solid #7a6ad8;
+        border-radius: 20px;
+    }
+
+    @@media (max-width: 768px) {
+        .video-container video {
+            width: 90%;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .video-container video {
+            width: 100%;
+            border-width: 6px;
+            border-radius: 12px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+    }
+</style>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.0/signalr.min.js"></script>
 
 <script>

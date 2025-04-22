@@ -9,10 +9,14 @@ let lessonId;
 
 const config = {
     iceServers: [
-        { urls: "stun:stun.l.google.com:19302" }
+        { urls: "stun:stun.l.google.com:19302" },
+        {
+            urls: 'turn:relay1.expressturn.com:3478',
+            username: 'ef3e4df8',
+            credential: 'c2de25a9'
+        }
     ]
 };
-
 connection.on("ReceiveOffer", async (fromUserId, offer) => {
     remoteUserId = fromUserId;
     peerConnection = createPeerConnection();
