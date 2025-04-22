@@ -33042,8 +33042,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>j4a5ejrclv</Fingerprint>
-      <Integrity>fZN423ntiTvj+IC003fQiDD8QKj6LqbU4OTIm+lKLE8=</Integrity>
+      <Fingerprint>vbztq8ok58</Fingerprint>
+      <Integrity>G1IwAqX9aBIBzUoNHPRwU2py4sZejMVCFe7GjoRk5gI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dashboard.css'))</OriginalItemSpec>
@@ -33600,8 +33600,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>88dt0sth1s</Fingerprint>
-      <Integrity>OOhWk4M9qRRjFziZUZCP5PZ8t3G96ks1e7rzijzbMQg=</Integrity>
+      <Fingerprint>y80wbl10ip</Fingerprint>
+      <Integrity>vsfaDrHjIHTJiAd5KPPr3BE2N1NvrYP7pnD7BfhWnpg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\videocall.js'))</OriginalItemSpec>

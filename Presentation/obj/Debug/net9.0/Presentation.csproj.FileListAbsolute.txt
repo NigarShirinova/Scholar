@@ -1947,7 +1947,6 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\ds64
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\im4devztfv-2wi3hjrgzq.gz
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\Presentation.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\1cayyboa5f-j4a5ejrclv.gz
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Npgsql.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.AspNetCore.Connections.Abstractions.dll
@@ -1964,4 +1963,5 @@ C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\Microsoft.Exten
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Net.ServerSentEvents.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\ASUS\source\repos\Scholar\Presentation\bin\Debug\net9.0\System.Threading.Channels.dll
-C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\no7l6iqunc-88dt0sth1s.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\no7l6iqunc-y80wbl10ip.gz
+C:\Users\ASUS\source\repos\Scholar\Presentation\obj\Debug\net9.0\compressed\1cayyboa5f-vbztq8ok58.gz

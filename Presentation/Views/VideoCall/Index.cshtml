@@ -1,18 +1,22 @@
 ﻿@{
-  
     var remoteUserId = ViewBag.RemoteUserId;
     var lessonId = ViewBag.LessonId;
 }
 
 <div class="main-content">
-    <header class="header">
-        <h1>Video Call</h1>
+    <header class="header" style="text-align: center; margin-bottom: 20px;">
+        <h1 style="font-size: 32px;">Video Call</h1>
     </header>
 
-    <video id="localVideo" autoplay muted style="width: 46%; height: 70%; border: 15px solid #7a6ad8; border-radius: 50px; margin: 20px"></video>
-    <video id="remoteVideo" autoplay style="width: 46%; height: 70%; border: 15px solid #7a6ad8; border-radius: 50px; margin: 20px;"></video>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video id="localVideo" autoplay muted playsinline></video>
+        </div>
+        <div class="video-wrapper">
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+    </div>
 </div>
-
 
 <style>
     .video-container {
@@ -22,30 +26,40 @@
         gap: 20px;
     }
 
-    .video-container video {
-        width: 45%;
-        height: auto;
-        aspect-ratio: 16 / 9;
+    .video-wrapper {
+        position: relative;
+        width: 90%;
+        max-width: 640px;
+        padding-bottom: 56.25%; /* 16:9 */
         border: 10px solid #7a6ad8;
         border-radius: 20px;
+        overflow: hidden;
+        background-color: #000;
     }
 
-    @@media (max-width: 768px) {
-        .video-container video {
-            width: 90%;
-        }
-    }
-
-    @@media (max-width: 480px) {
-        .video-container video {
+        .video-wrapper video {
+            position: absolute;
             width: 100%;
-            border-width: 6px;
-            border-radius: 12px;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            border: none;
+            border-radius: 20px;
         }
 
-        .header h1 {
-            font-size: 24px;
-        }
+    @@media (min-width: 768px) {
+        .video-container
+
+    {
+        flex-direction: row;
+    }
+
+    .video-wrapper {
+        width: 45%;
+        padding-bottom: 25.3%;
+    }
+
     }
 </style>
 
