@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #f8f9fc;
+}
+
+.sidebar {
+    width: 260px;
+    background: #ffffff;
+    border-radius: 20px;
+    color: #2c3e50;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.sidebar ul a {
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar ul li {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    gap: 10px;
+}
+
+.sidebar ul li i {
+    font-size: 20px;
+}
+
+.sidebar ul li:hover {
+    background: #7a6ad8;
+    color: white;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.header {
+    background: #7a6ad8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 40px;
+  
+}
+
+.card {
+    background: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+}
+
+.card h3 {
+    font-size: 30px;
+    color: #7a6ad8;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+.card button{
+    margin-top: 15px;
+    padding: 10px 50px;
+    border-radius: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: lightgray;
+    font-weight: 500;
+}
+
+.card button:hover{
+    background-color: #7a6ad8;
+    color:white;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}

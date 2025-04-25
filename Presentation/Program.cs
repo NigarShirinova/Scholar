@@ -21,7 +21,7 @@ builder.Services.AddControllersWithViews();
 
 // DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Smarter")));
 
 
 
