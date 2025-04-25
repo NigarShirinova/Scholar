@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\Scholar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\mylessons.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\views\\dashboard\\buylesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\dashboard\\buylesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -26,11 +34,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "MyLessons.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\MyLessons.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T20:51:53.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuyLesson.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Dashboard\\BuyLesson.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T20:51:39.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": ".dockerignore",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\.dockerignore",
               "RelativeDocumentMoniker": ".dockerignore",
@@ -42,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Dockerfile",
               "RelativeDocumentMoniker": "Presentation\\Dockerfile",
@@ -54,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\appsettings.json",
               "RelativeDocumentMoniker": "Presentation\\appsettings.json",
@@ -67,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
