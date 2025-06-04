@@ -35,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:presentation\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|c:\\users\\asus\\source\\repos\\scholar\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{9E0D9F54-FA41-432F-9F8F-8CA0BB01A16F}|Presentation\\Presentation.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|c:\\users\\asus\\source\\repos\\scholar\\data\\migrations\\20250604162523_last.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D0F8DE-3206-418A-9017-7C453B4873D8}|Data\\Data.csproj|solutionrelative:data\\migrations\\20250604162523_last.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -66,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "20250604162523_last.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Data\\Migrations\\20250604162523_last.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20250604162523_last.cs",
@@ -102,18 +98,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": ".dockerignore",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\.dockerignore",
-              "RelativeDocumentMoniker": ".dockerignore",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\.dockerignore",
-              "RelativeToolTip": ".dockerignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-25T19:03:19.651Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Dockerfile",
@@ -134,8 +118,7 @@
               "RelativeToolTip": "Presentation\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-25T18:25:35.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:25:35.272Z"
             },
             {
               "$type": "Document",
@@ -145,7 +128,7 @@
               "RelativeDocumentMoniker": "Presentation\\Program.cs",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\Scholar\\Presentation\\Program.cs",
               "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T16:59:15.607Z",
               "EditorCaption": ""
